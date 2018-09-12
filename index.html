@@ -62,6 +62,239 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-scrollHeight" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/12/scrollHeight/" class="article-date">
+  <time datetime="2018-09-12T03:34:11.884Z" itemprop="datePublished">2018-09-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/12/scrollHeight/">scrollHeight</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">      <span class="comment">#box &#123;</span></span><br><span class="line">        height: 1500px;</span><br><span class="line">        width: 500px;</span><br><span class="line">        background: <span class="comment">#a5c300;</span></span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div id=<span class="string">"box"</span>&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">      var bd = document.body</span><br><span class="line">      var box = document.getElementById(<span class="string">'box'</span>)</span><br><span class="line"></span><br><span class="line">      console.log(bd.scrollHeight) // 1500不变   </span><br><span class="line">      console.log(box.scrollHeight) //1500不变</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/12/scrollHeight/" data-id="cjlyrmpsl000fa0vd4fgjbj1n" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-clientWidth" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/12/clientWidth/" class="article-date">
+  <time datetime="2018-09-12T03:34:09.907Z" itemprop="datePublished">2018-09-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/12/clientWidth/">clientWidth</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">      <span class="comment">#box &#123;</span></span><br><span class="line">        height: 1500px;</span><br><span class="line">        width: 500px;</span><br><span class="line">        background: <span class="comment">#a5c300;</span></span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div id=<span class="string">"box"</span>&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">      var bd = document.body</span><br><span class="line">      var box = document.getElementById(<span class="string">'box'</span>)</span><br><span class="line">      console.log(bd.clientHeight) //1500 不变</span><br><span class="line">      console.log(bd.clientWidth) //变化</span><br><span class="line">      console.log(box.clientHeight) //1500 不变</span><br><span class="line">      console.log(box.clientWidth) //500 不变</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/12/clientWidth/" data-id="cjlyrmpra0004a0vdtdnz3oys" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-回文数" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/12/回文数/" class="article-date">
+  <time datetime="2018-09-12T03:34:08.721Z" itemprop="datePublished">2018-09-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/12/回文数/">回文数</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;某个数字&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line"></span><br><span class="line">    &lt;script&gt;</span><br><span class="line">      var x = 2016</span><br><span class="line">      document.write(x + <span class="string">'的个位数位'</span> + x % 10 + <span class="string">'&lt;br&gt;'</span>) //6</span><br><span class="line">      document.write(x + <span class="string">'的十位数位'</span> + Math.floor(x / 10) % 10 + <span class="string">'&lt;br&gt;'</span>) //1</span><br><span class="line">      document.write(x + <span class="string">'的百位数位'</span> + Math.floor(x / 100) % 10 + <span class="string">'&lt;br&gt;'</span>) //0</span><br><span class="line">      document.write(x + <span class="string">'的千位数位'</span> + Math.floor(x / 1000) % 10) //2</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;1000以内的回文数&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">      <span class="keyword">function</span> <span class="function"><span class="title">hws</span></span>() &#123;</span><br><span class="line">        var hArr = []</span><br><span class="line">        <span class="keyword">for</span>(i = 0; i &lt;= 1000; i++) &#123;</span><br><span class="line">          var gw = i % 10</span><br><span class="line">          var sw = Math.floor(i / 10) % 10</span><br><span class="line">          var bw = Math.floor(i / 100) % 10</span><br><span class="line">          var qw = Math.floor(i / 1000) % 10</span><br><span class="line">          <span class="keyword">if</span>(gw == qw &amp;&amp; sw == bw) &#123;</span><br><span class="line">            hArr.push(i)</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> hArr</span><br><span class="line">      &#125;</span><br><span class="line">      hws().forEach(<span class="keyword">function</span>(item, index) &#123;</span><br><span class="line">        document.write(index + <span class="string">":"</span> + item + <span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">      &#125;)</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line"></span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">      <span class="keyword">for</span>(var i = 1; i &lt; 10; i++) &#123;</span><br><span class="line">        <span class="keyword">for</span>(var j = 1; j &lt; 10; j++) &#123;</span><br><span class="line">          <span class="keyword">for</span>(var z = 1; z &lt; 10; z++) &#123;</span><br><span class="line">            <span class="keyword">if</span>(i == z) &#123;</span><br><span class="line">              document.write(i * 100 + j * 10 + z + <span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">            &#125;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">      <span class="keyword">function</span> check(i) &#123;</span><br><span class="line">        var arr = i.toString().split(<span class="string">''</span>)</span><br><span class="line">        <span class="keyword">if</span>(arr[0] == arr[arr.length - 1] &amp;&amp; arr.length &gt; 1) &#123;</span><br><span class="line">          <span class="built_in">return</span> <span class="literal">true</span></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="built_in">return</span> <span class="literal">false</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">for</span>(var i = 1; i &lt; 1000; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(check(i)) &#123;</span><br><span class="line">          document.write(i + <span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/12/回文数/" data-id="cjlyrmptw000xa0vdj8lxcqpp" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-三元运算符" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/12/三元运算符/" class="article-date">
+  <time datetime="2018-09-12T03:34:07.409Z" itemprop="datePublished">2018-09-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/12/三元运算符/">三元运算符</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">    &lt;link rel=<span class="string">"stylesheet"</span> href=<span class="string">"css/public.css"</span> <span class="built_in">type</span>=<span class="string">"text/css"</span>&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  var age = 80</span><br><span class="line">  //  var person = (age&gt;60)? <span class="string">'老'</span> : <span class="string">'幼'</span></span><br><span class="line">  var person = age = 80 ? <span class="string">'老'</span> : <span class="string">'幼'</span></span><br><span class="line">  alert(person)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/12/三元运算符/" data-id="cjlyrmpsl000ja0vdhkb2i6ar" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-JS经典之for循环闭包问题解决方法" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/12/JS经典之for循环闭包问题解决方法/" class="article-date">
+  <time datetime="2018-09-12T03:34:06.180Z" itemprop="datePublished">2018-09-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/12/JS经典之for循环闭包问题解决方法/">JS经典之for循环闭包问题解决方法</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">什么是闭包？</span><br><span class="line">简单理解就是：一个函数中嵌套了另一个函数，里面的一个函数要访问外层函数的变量，所以就形成了一个闭包，闭包即是为了保留某些局部变量的值而存在的</span><br></pre></td></tr></table></figure>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;列表1&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表2&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表3&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表4&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表5&lt;/li&gt;</span><br><span class="line">      &lt;/ul&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      var ali = document.getElementsByTagName(<span class="string">'li'</span>)</span><br><span class="line">      var len = ali.length</span><br><span class="line">      <span class="keyword">for</span>(var i = 0; i &lt; len; i++) &#123;</span><br><span class="line">        ali[i].onclick = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">          alert(i)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      //永远都是 5</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="解决方案一：加一层闭包，i-以函数参数形式传递给内层函数"><a href="#解决方案一：加一层闭包，i-以函数参数形式传递给内层函数" class="headerlink" title="解决方案一：加一层闭包，i 以函数参数形式传递给内层函数"></a>解决方案一：加一层闭包，i 以函数参数形式传递给内层函数</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;列表1&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表2&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表3&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表4&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表5&lt;/li&gt;</span><br><span class="line">      &lt;/ul&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      var ali = document.getElementsByTagName(<span class="string">'li'</span>)</span><br><span class="line">      var len = ali.length</span><br><span class="line">      <span class="keyword">for</span>(var i = 0; i &lt; len; i++) &#123;</span><br><span class="line">        (<span class="keyword">function</span>(i) &#123;</span><br><span class="line">          ali[i].onclick = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">            alert(i)</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;)(i)</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="解决方案二：自定义属性将i值保存起来，然后弹出这个值"><a href="#解决方案二：自定义属性将i值保存起来，然后弹出这个值" class="headerlink" title="解决方案二：自定义属性将i值保存起来，然后弹出这个值"></a>解决方案二：自定义属性将i值保存起来，然后弹出这个值</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;列表1&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表2&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表3&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表4&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表5&lt;/li&gt;</span><br><span class="line">      &lt;/ul&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      var ali = document.getElementsByTagName(<span class="string">'li'</span>)</span><br><span class="line">      var len = ali.length</span><br><span class="line">      <span class="keyword">for</span>(var i = 0; i &lt; len; i++) &#123;</span><br><span class="line">      	ali[i].index=i</span><br><span class="line">        ali[i].onclick = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">          alert(this.index)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/12/JS经典之for循环闭包问题解决方法/" data-id="cjlyrmpqf0001a0vdj4lemglb" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-检查用户显示器的分辨率" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/12/检查用户显示器的分辨率/" class="article-date">
+  <time datetime="2018-09-12T03:34:04.671Z" itemprop="datePublished">2018-09-12</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/12/检查用户显示器的分辨率/">检查用户显示器的分辨率</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="keyword">if</span>(screen.width != 800) &#123;</span><br><span class="line">    alert(<span class="string">'不是最佳分辨率，建议调整为1024*768'</span>)</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    alert(<span class="string">'最佳分辨率'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/12/检查用户显示器的分辨率/" data-id="cjlyrmpur0019a0vdb83nx82h" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-个人开发规范" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/09/12/个人开发规范/" class="article-date">
@@ -90,7 +323,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/个人开发规范/" data-id="cjlyl1a4y000lyovdybocog7r" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/个人开发规范/" data-id="cjlyrmpt0000ma0vduv2d0iv7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -128,7 +361,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/css垂直居中/" data-id="cjlyl1a2f0005yovdtlst9obm" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/css垂直居中/" data-id="cjlyrmprp0007a0vdlupksie4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -168,7 +401,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/扁平化多维数组/" data-id="cjlyl1a6h0010yovd4h7sm7e7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/扁平化多维数组/" data-id="cjlyrmpur0016a0vdn2em81yl" class="article-share-link">Share</a>
       
       
     </footer>
@@ -206,235 +439,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/前端工程化/" data-id="cjlyl1a5l000ryovdicrkbmiw" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-前端性能优化的方式" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/09/12/前端性能优化的方式/" class="article-date">
-  <time datetime="2018-09-12T02:28:25.199Z" itemprop="datePublished">2018-09-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/12/前端性能优化的方式/">前端性能优化的方式</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">减少dom操作</span><br><span class="line">部署前，图片压缩，代码压缩</span><br><span class="line">优化js代码结构，减少冗余代码</span><br><span class="line">减少http请求，合理设置 HTTP缓存</span><br><span class="line">使用内容分发cdn加速</span><br><span class="line">静态资源缓存</span><br><span class="line">图片延迟加载</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/前端性能优化的方式/" data-id="cjlyl1a5d000pyovdo7ehlxpr" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/09/12/一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？/" class="article-date">
-  <time datetime="2018-09-12T02:28:23.544Z" itemprop="datePublished">2018-09-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/12/一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？/">一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">浏览器查找域名的 IP 地址</span><br><span class="line">这一步包括 DNS 具体的查找过程，包括：浏览器缓存-&gt;系统缓存-&gt;路由器缓存…</span><br><span class="line">浏览器向 web 服务器发送一个 HTTP 请求</span><br><span class="line">服务器的永久重定向响应（从 http://datafz.cn 到 http://www.datafz.cn）</span><br><span class="line">浏览器跟踪重定向地址</span><br><span class="line">服务器处理请求</span><br><span class="line">服务器返回一个 HTTP 响应</span><br><span class="line">浏览器显示 HTML</span><br><span class="line">浏览器发送请求获取嵌入在 HTML 中的资源（如图片、音频、视频、CSS、JS等等）</span><br><span class="line">浏览器发送异步请求</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？/" data-id="cjlyl1a4k000hyovdjpl8cx13" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-图片预览" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/09/12/图片预览/" class="article-date">
-  <time datetime="2018-09-12T02:28:21.761Z" itemprop="datePublished">2018-09-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/12/图片预览/">图片预览</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;图片预览&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"file"</span> name=<span class="string">"file"</span> onchange=<span class="string">"showPreview(this)"</span> /&gt;</span><br><span class="line">    &lt;img id=<span class="string">"portrait"</span> src=<span class="string">""</span>&gt;</span><br><span class="line"></span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      <span class="keyword">function</span> showPreview(<span class="built_in">source</span>) &#123;</span><br><span class="line">        //    	console.log(<span class="built_in">source</span>)</span><br><span class="line">        var file = source.files[0];</span><br><span class="line">        <span class="keyword">if</span>(window.FileReader) &#123;</span><br><span class="line">          var reader = new FileReader();</span><br><span class="line">          reader.onloadend = <span class="keyword">function</span>(e) &#123;</span><br><span class="line">            document.getElementById(<span class="string">"portrait"</span>).src = e.target.result;</span><br><span class="line">          &#125;;</span><br><span class="line">          reader.readAsDataURL(file);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/图片预览/" data-id="cjlyl1a5s000tyovdafg9cv3h" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-前端问题总结" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/09/12/前端问题总结/" class="article-date">
-  <time datetime="2018-09-12T02:28:19.181Z" itemprop="datePublished">2018-09-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/12/前端问题总结/">前端问题总结</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">前后台数据交互问题（包括除了用ajax还能用什么）</span><br><span class="line"></span><br><span class="line">怎么规范代码</span><br><span class="line"></span><br><span class="line">事件流是什么</span><br><span class="line"></span><br><span class="line">浏览器的优化</span><br><span class="line"></span><br><span class="line">ios和安卓遇到什么兼容问题，怎么解决的</span><br><span class="line"></span><br><span class="line">ie兼容性</span><br><span class="line"></span><br><span class="line">在项目中遇到的问题，怎么解决的</span><br><span class="line"></span><br><span class="line">做没做过后台调取数据</span><br><span class="line"></span><br><span class="line">怎么跟后台进行数据交互（详细细节）</span><br><span class="line"></span><br><span class="line">原生app和混合app是什么，你有没有开发过</span><br><span class="line"></span><br><span class="line">h5的api等新特性</span><br><span class="line"></span><br><span class="line">es6是什么，用过没有</span><br><span class="line"></span><br><span class="line">在ios和安卓手机上同样的效果显示不一样怎么处理</span><br><span class="line"></span><br><span class="line">js问题较详细的问题有（js假如有三个数据同步完成，执行一个事件）</span><br><span class="line"></span><br><span class="line">轮播两种（无缝滚动，图片切换）原生js，要求可以手写</span><br><span class="line"></span><br><span class="line">用svg写过项目没有</span><br><span class="line"></span><br><span class="line">做过第三方登陆么，怎么做，思路</span><br><span class="line"></span><br><span class="line">缓存问题怎么解决</span><br><span class="line"></span><br><span class="line">折线图问题（调插件都不会写）</span><br><span class="line"></span><br><span class="line">自己不做返回按钮，用浏览器自带的按钮，点击之后直接退出应用，怎么解决</span><br><span class="line"></span><br><span class="line">ios和安卓显示不一样怎么解决</span><br><span class="line"></span><br><span class="line">文本框的光标在app上怎么取消</span><br><span class="line"></span><br><span class="line">移动项目打包之后在ios上怎么安装</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/前端问题总结/" data-id="cjlyl1a5h000qyovdv4gknz5l" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-字符串对象" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/09/10/字符串对象/" class="article-date">
-  <time datetime="2018-09-10T09:57:10.457Z" itemprop="datePublished">2018-09-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/10/字符串对象/">字符串对象</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;字符串对象&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  var str1 = <span class="string">'hello'</span></span><br><span class="line">  var str2 = new String(<span class="string">'hello'</span>)</span><br><span class="line">  document.write(typeof str1 + <span class="string">'&lt;br&gt;'</span>) //string</span><br><span class="line">  document.write(typeof str2 + <span class="string">'&lt;br&gt;'</span>) //object</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/10/字符串对象/" data-id="cjlyl1a5y000vyovd3x8f2pji" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-++" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/09/10/++/" class="article-date">
-  <time datetime="2018-09-10T09:26:01.276Z" itemprop="datePublished">2018-09-10</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/10/++/">++</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;++&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script&gt;</span><br><span class="line">      var</span><br><span class="line">        obj1 = <span class="string">'abc'</span>,</span><br><span class="line">        obj2 = <span class="literal">true</span>,</span><br><span class="line">        obj3 = <span class="literal">false</span>,</span><br><span class="line">        obj4 = &#123;&#125;,</span><br><span class="line">        obj5 = &#123;</span><br><span class="line">          toString: <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">            <span class="built_in">return</span> <span class="string">'abc'</span>;</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      obj6 = &#123;</span><br><span class="line">        toString: <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">          <span class="built_in">return</span> 123;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      console.log(<span class="string">'abc'</span> + obj1++) //NaN</span><br><span class="line">      console.log(<span class="string">'true'</span> + obj2++) //1</span><br><span class="line">      console.log(<span class="string">'false'</span> + obj3++) //0</span><br><span class="line">      console.log(<span class="string">'&#123;&#125;'</span> + obj4++) //NaN</span><br><span class="line">      console.log(obj5++) //NaN</span><br><span class="line">      console.log(obj6++) //123</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/10/++/" data-id="cjlyl1a180000yovd81gy25q7" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/前端工程化/" data-id="cjlyrmptw000ta0vdkis2r020" class="article-share-link">Share</a>
       
       
     </footer>
@@ -480,23 +485,23 @@
       <ul>
         
           <li>
-            <a href="/2018/09/12/个人开发规范/">个人开发规范</a>
+            <a href="/2018/09/12/scrollHeight/">scrollHeight</a>
           </li>
         
           <li>
-            <a href="/2018/09/12/css垂直居中/">css垂直居中</a>
+            <a href="/2018/09/12/clientWidth/">clientWidth</a>
           </li>
         
           <li>
-            <a href="/2018/09/12/扁平化多维数组/">扁平化多维数组</a>
+            <a href="/2018/09/12/回文数/">回文数</a>
           </li>
         
           <li>
-            <a href="/2018/09/12/前端工程化/">前端工程化</a>
+            <a href="/2018/09/12/三元运算符/">三元运算符</a>
           </li>
         
           <li>
-            <a href="/2018/09/12/前端性能优化的方式/">前端性能优化的方式</a>
+            <a href="/2018/09/12/JS经典之for循环闭包问题解决方法/">JS经典之for循环闭包问题解决方法</a>
           </li>
         
       </ul>
