@@ -62,10 +62,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-倍数" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-JS经典之for循环闭包问题解决方法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/10/倍数/" class="article-date">
-  <time datetime="2018-09-10T06:42:24.198Z" itemprop="datePublished">2018-09-10</time>
+    <a href="/2018/09/12/JS经典之for循环闭包问题解决方法/" class="article-date">
+  <time datetime="2018-09-12T03:34:06.180Z" itemprop="datePublished">2018-09-12</time>
 </a>
     
   </div>
@@ -76,7 +76,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/10/倍数/">倍数</a>
+      <a class="article-title" href="/2018/09/12/JS经典之for循环闭包问题解决方法/">JS经典之for循环闭包问题解决方法</a>
     </h1>
   
 
@@ -85,13 +85,15 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      <span class="keyword">function</span> checkNum(a, b, c) &#123;</span><br><span class="line">        <span class="keyword">for</span>(i = a; i &lt; b; i++) &#123;</span><br><span class="line">          <span class="keyword">if</span>(c(i)) &#123;</span><br><span class="line">            document.write(i + <span class="string">'/'</span>)</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      <span class="keyword">function</span> c(x) &#123;</span><br><span class="line">        <span class="keyword">if</span>(x % 3 == 0) &#123;</span><br><span class="line">          <span class="built_in">return</span> <span class="literal">true</span></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">          <span class="built_in">return</span> <span class="literal">false</span></span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      checkNum(1, 50, c)</span><br><span class="line">      //3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      <span class="keyword">function</span> checkNum(a, b, c) &#123;</span><br><span class="line">        <span class="keyword">for</span>(i = a; i &lt; b; i++) &#123;</span><br><span class="line">          <span class="keyword">if</span>(i % c == 0) &#123;</span><br><span class="line">            document.write(i + <span class="string">'/'</span>)</span><br><span class="line">             //3, 6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39, 42, 45, 48  </span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line"></span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">什么是闭包？</span><br><span class="line">简单理解就是：一个函数中嵌套了另一个函数，里面的一个函数要访问外层函数的变量，所以就形成了一个闭包，闭包即是为了保留某些局部变量的值而存在的</span><br></pre></td></tr></table></figure>
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;列表1&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表2&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表3&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表4&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表5&lt;/li&gt;</span><br><span class="line">      &lt;/ul&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      var ali = document.getElementsByTagName(<span class="string">'li'</span>)</span><br><span class="line">      var len = ali.length</span><br><span class="line">      <span class="keyword">for</span>(var i = 0; i &lt; len; i++) &#123;</span><br><span class="line">        ali[i].onclick = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">          alert(i)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">      //永远都是 5</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="解决方案一：加一层闭包，i-以函数参数形式传递给内层函数"><a href="#解决方案一：加一层闭包，i-以函数参数形式传递给内层函数" class="headerlink" title="解决方案一：加一层闭包，i 以函数参数形式传递给内层函数"></a>解决方案一：加一层闭包，i 以函数参数形式传递给内层函数</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;列表1&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表2&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表3&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表4&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表5&lt;/li&gt;</span><br><span class="line">      &lt;/ul&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      var ali = document.getElementsByTagName(<span class="string">'li'</span>)</span><br><span class="line">      var len = ali.length</span><br><span class="line">      <span class="keyword">for</span>(var i = 0; i &lt; len; i++) &#123;</span><br><span class="line">        (<span class="keyword">function</span>(i) &#123;</span><br><span class="line">          ali[i].onclick = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">            alert(i)</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;)(i)</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="解决方案二：自定义属性将i值保存起来，然后弹出这个值"><a href="#解决方案二：自定义属性将i值保存起来，然后弹出这个值" class="headerlink" title="解决方案二：自定义属性将i值保存起来，然后弹出这个值"></a>解决方案二：自定义属性将i值保存起来，然后弹出这个值</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div&gt;</span><br><span class="line">      &lt;ul&gt;</span><br><span class="line">        &lt;li&gt;列表1&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表2&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表3&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表4&lt;/li&gt;</span><br><span class="line">        &lt;li&gt;列表5&lt;/li&gt;</span><br><span class="line">      &lt;/ul&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      var ali = document.getElementsByTagName(<span class="string">'li'</span>)</span><br><span class="line">      var len = ali.length</span><br><span class="line">      <span class="keyword">for</span>(var i = 0; i &lt; len; i++) &#123;</span><br><span class="line">      	ali[i].index=i</span><br><span class="line">        ali[i].onclick = <span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">          alert(this.index)</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'ul li'</span>).click(<span class="function"><span class="title">function</span></span>() &#123;</span><br><span class="line">  console.log($(this).index())</span><br><span class="line">&#125;)</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/10/倍数/" data-id="cjm0km8ay000qi8vdn6g7t05e" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/JS经典之for循环闭包问题解决方法/" data-id="cjm35zw0h0003bsvduqi23m8u" class="article-share-link">Share</a>
       
       
     </footer>
@@ -101,10 +103,10 @@
 
 
   
-    <article id="post-continue" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-检查用户显示器的分辨率" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/10/continue/" class="article-date">
-  <time datetime="2018-09-10T06:21:49.314Z" itemprop="datePublished">2018-09-10</time>
+    <a href="/2018/09/12/检查用户显示器的分辨率/" class="article-date">
+  <time datetime="2018-09-12T03:34:04.671Z" itemprop="datePublished">2018-09-12</time>
 </a>
     
   </div>
@@ -115,7 +117,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/10/continue/">continue</a>
+      <a class="article-title" href="/2018/09/12/检查用户显示器的分辨率/">检查用户显示器的分辨率</a>
     </h1>
   
 
@@ -124,15 +126,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">console.log(1 % 3) //1</span><br><span class="line">console.log(2 % 3) //2</span><br><span class="line">console.log(3 % 3) //0</span><br><span class="line">console.log(4 % 3) //1</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      <span class="keyword">for</span>(i = 1; i &lt;= 50; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(i % 3) <span class="built_in">continue</span>;</span><br><span class="line">        document.write(i + <span class="string">'/'</span>) // 3/6/9/12/15/18/21/24/27/30/33/36/39/42/45/48/</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      <span class="keyword">for</span> (i = 1; i &lt;= 50; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (i % 3==0) &#123;</span><br><span class="line">            document.write(i) // 3/6/9/12/15/18/21/24/27/30/33/36/39/42/45/48/</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">     <span class="keyword">for</span>(i = 1; i &lt;= 50; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span>(i % 3 == 0) <span class="built_in">continue</span>;</span><br><span class="line">        document.write(i + <span class="string">'/'</span>) </span><br><span class="line">        // 1/2/4/5/7/8/10/11/13/14/16/17/19/20/22/23/25/26/28/29/31/32/34/35/37/38/40/41/43/44/46/47/49/50/</span><br><span class="line">     &#125;      </span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      <span class="keyword">for</span> (i = 1; i &lt;= 50; i++) &#123;</span><br><span class="line">        <span class="keyword">if</span> (i % 3) &#123;</span><br><span class="line">            document.write(i)</span><br><span class="line">            // 1/2/4/5/7/8/10/11/13/14/16/17/19/20/22/23/25/26/28/29/31/32/34/35/37/38/40/41/43/44/46/47/49/50/</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="keyword">if</span>(screen.width != 800) &#123;</span><br><span class="line">    alert(<span class="string">'不是最佳分辨率，建议调整为1024*768'</span>)</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    alert(<span class="string">'最佳分辨率'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/10/continue/" data-id="cjm0km8970008i8vd4y7r543d" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/检查用户显示器的分辨率/" data-id="cjm35zw7f001xbsvdtr7b6yce" class="article-share-link">Share</a>
       
       
     </footer>
@@ -142,10 +141,10 @@
 
 
   
-    <article id="post-取模（余）%运算" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-个人开发规范" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/10/取模（余）%运算/" class="article-date">
-  <time datetime="2018-09-10T06:13:22.939Z" itemprop="datePublished">2018-09-10</time>
+    <a href="/2018/09/12/个人开发规范/" class="article-date">
+  <time datetime="2018-09-12T02:28:31.775Z" itemprop="datePublished">2018-09-12</time>
 </a>
     
   </div>
@@ -156,7 +155,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/10/取模（余）%运算/">取模（余）%运算</a>
+      <a class="article-title" href="/2018/09/12/个人开发规范/">个人开发规范</a>
     </h1>
   
 
@@ -165,12 +164,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      <span class="keyword">for</span>(i = 1; i &lt;= 50; i++) &#123;</span><br><span class="line">        document.write(i % 3 + <span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">      &#125;</span><br><span class="line">      // 50=3*16+2</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">方法命名：驼峰</span><br><span class="line">图片名：book.png book@highlight.png </span><br><span class="line">class:home_content</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/10/取模（余）%运算/" data-id="cjm0km8bd000vi8vdlbapedjw" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/个人开发规范/" data-id="cjm35zw4e000vbsvdyeh539c9" class="article-share-link">Share</a>
       
       
     </footer>
@@ -180,10 +179,10 @@
 
 
   
-    <article id="post-开放接口" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-css垂直居中" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/10/开放接口/" class="article-date">
-  <time datetime="2018-09-10T06:11:39.695Z" itemprop="datePublished">2018-09-10</time>
+    <a href="/2018/09/12/css垂直居中/" class="article-date">
+  <time datetime="2018-09-12T02:28:29.596Z" itemprop="datePublished">2018-09-12</time>
 </a>
     
   </div>
@@ -194,7 +193,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/10/开放接口/">开放接口</a>
+      <a class="article-title" href="/2018/09/12/css垂直居中/">css垂直居中</a>
     </h1>
   
 
@@ -203,14 +202,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://jsonplaceholder.typicode.com/</span><br></pre></td></tr></table></figure>
-<h2 id="豆瓣"><a href="#豆瓣" class="headerlink" title="豆瓣"></a>豆瓣</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">http://t.yushu.im</span><br><span class="line">正在上映的电影-北京：https://api.douban.com/v2/movie/in_theaters</span><br><span class="line">演员详情：http://api.douban.com/v2/movie/celebrity/1274297</span><br><span class="line">电影详情：http://api.douban.com/v2/movie/subject/26752088</span><br><span class="line">即将上映的电影：http://api.douban.com/v2/movie/coming_soon</span><br><span class="line">豆瓣电影Top250：http://api.douban.com/v2/movie/top250</span><br><span class="line">豆瓣电影北美票房榜：http://api.douban.com/v2/movie/us_box</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">QQ音乐轮播图：https://c.y.qq.com/musichall/fcgi-bin/fcg_yqqhomepagerecommend.fcg</span><br><span class="line">http://news-at.zhihu.com/api/2/news/latest</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;css垂直居中&lt;/title&gt;</span><br><span class="line">    &lt;style <span class="built_in">type</span>=<span class="string">"text/css"</span>&gt;</span><br><span class="line">      .father &#123;</span><br><span class="line">        width: 500px;</span><br><span class="line">        height: 500px;</span><br><span class="line">        background-color: orange;</span><br><span class="line">        position: relative;</span><br><span class="line">      &#125;</span><br><span class="line">      </span><br><span class="line">      .son &#123;</span><br><span class="line">        width: 100px;</span><br><span class="line">        height: 100px;</span><br><span class="line">        background-color: palevioletred;</span><br><span class="line">        position: absolute;</span><br><span class="line">        left: 50%;</span><br><span class="line">        top: 50%;</span><br><span class="line">        transform: translate(-50%,-50%);</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div class=<span class="string">"father"</span>&gt;</span><br><span class="line">      &lt;div class=<span class="string">"son"</span>&gt;</span><br><span class="line">      &lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/10/开放接口/" data-id="cjm0km8c90012i8vdob52mhj4" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/css垂直居中/" data-id="cjm35zw280007bsvdhvmirv0v" class="article-share-link">Share</a>
       
       
     </footer>
@@ -220,10 +217,10 @@
 
 
   
-    <article id="post-上传图片" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-扁平化多维数组" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/07/上传图片/" class="article-date">
-  <time datetime="2018-09-07T04:37:19.479Z" itemprop="datePublished">2018-09-07</time>
+    <a href="/2018/09/12/扁平化多维数组/" class="article-date">
+  <time datetime="2018-09-12T02:28:28.072Z" itemprop="datePublished">2018-09-12</time>
 </a>
     
   </div>
@@ -234,7 +231,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/07/上传图片/">上传图片</a>
+      <a class="article-title" href="/2018/09/12/扁平化多维数组/">扁平化多维数组</a>
     </h1>
   
 
@@ -243,15 +240,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="方法1"><a href="#方法1" class="headerlink" title="方法1"></a>方法1</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">新建<span class="built_in">source</span>/img/新建项目.png</span><br><span class="line">&lt;img src=<span class="string">"../images/banner.jpg"</span>/&gt;</span><br></pre></td></tr></table></figure>
-<p><img src="/2018/09/07/上传图片/../images/banner.jpg"></p>
-<h2 id="方法2"><a href="#方法2" class="headerlink" title="方法2"></a>方法2</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">新建<span class="built_in">source</span>/images/新建项目.png</span><br><span class="line">post_asset_folder: <span class="literal">true</span></span><br><span class="line">npm install hexo-asset-image --save</span><br><span class="line">![图片](images/banner.jpg)</span><br></pre></td></tr></table></figure>
-<p><img src="/2018/09/07/上传图片/images/banner.jpg" alt="图片"></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;老方法&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      var arr = [1, 3, 4, 5,</span><br><span class="line">      [6, [0, 1, 5], 9],</span><br><span class="line">      [2, 5, [1, 5]],</span><br><span class="line">      [5]</span><br><span class="line">      ];</span><br><span class="line">      </span><br><span class="line">      var result = [] </span><br><span class="line">      <span class="keyword">function</span> unfold(arr) &#123;</span><br><span class="line">        <span class="keyword">for</span>(var i = 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">          <span class="keyword">if</span>(typeof arr[i] == <span class="string">"object"</span> &amp;&amp; arr[i].length &gt;= 1) &#123;</span><br><span class="line">            unfold(arr[i]);</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            result.push(arr[i]);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> result</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      console.log(unfold(arr))</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;toString&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      var arr = [1, 3, 4, 5,</span><br><span class="line">      [6, [0, 1, 5], 9],</span><br><span class="line">      [2, 5, [1, 5]],</span><br><span class="line">      [5]</span><br><span class="line">      ];</span><br><span class="line">      </span><br><span class="line">     var newarr = arr.toString().split(<span class="string">','</span>)</span><br><span class="line">     console.log(newarr)</span><br><span class="line">     </span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;es6的reduce函数&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      var arr = [1, 3, 4, 5,</span><br><span class="line">      [6, [0, 1, 5], 9],</span><br><span class="line">      [2, 5, [1, 5]],</span><br><span class="line">      [5]</span><br><span class="line">      ];</span><br><span class="line">      </span><br><span class="line">    const flatten = arr =&gt; arr.reduce((a, b) =&gt; a.concat(Array.isArray(b) ? flatten(b) : b), []);</span><br><span class="line">    var result = flatten(arr)</span><br><span class="line">    console.log(result) </span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/07/上传图片/" data-id="cjm0km8ai000mi8vdrim17mqi" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/扁平化多维数组/" data-id="cjm35zw70001tbsvdykj94qia" class="article-share-link">Share</a>
       
       
     </footer>
@@ -261,10 +257,10 @@
 
 
   
-    <article id="post-v-for的对象" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端工程化" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/07/v-for的对象/" class="article-date">
-  <time datetime="2018-09-07T04:27:29.215Z" itemprop="datePublished">2018-09-07</time>
+    <a href="/2018/09/12/前端工程化/" class="article-date">
+  <time datetime="2018-09-12T02:28:26.671Z" itemprop="datePublished">2018-09-12</time>
 </a>
     
   </div>
@@ -275,7 +271,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/07/v-for的对象/">v-for的对象</a>
+      <a class="article-title" href="/2018/09/12/前端工程化/">前端工程化</a>
     </h1>
   
 
@@ -284,12 +280,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Object</span><br><span class="line">Array</span><br><span class="line">number</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">开发规范</span><br><span class="line">模块化开发</span><br><span class="line">组件化开发</span><br><span class="line">组件仓库</span><br><span class="line">性能优化</span><br><span class="line">项目部署</span><br><span class="line">开发流程</span><br><span class="line">开发工具</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/07/v-for的对象/" data-id="cjm0km8a3000fi8vdak5j89pp" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/前端工程化/" data-id="cjm35zw4u000xbsvd1vfl1eni" class="article-share-link">Share</a>
       
       
     </footer>
@@ -299,10 +295,10 @@
 
 
   
-    <article id="post-better-scroll点击事件不起作用" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端性能优化的方式" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/07/better-scroll点击事件不起作用/" class="article-date">
-  <time datetime="2018-09-07T04:13:14.029Z" itemprop="datePublished">2018-09-07</time>
+    <a href="/2018/09/12/前端性能优化的方式/" class="article-date">
+  <time datetime="2018-09-12T02:28:25.199Z" itemprop="datePublished">2018-09-12</time>
 </a>
     
   </div>
@@ -313,7 +309,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/07/better-scroll点击事件不起作用/">better-scroll点击事件不起作用</a>
+      <a class="article-title" href="/2018/09/12/前端性能优化的方式/">前端性能优化的方式</a>
     </h1>
   
 
@@ -322,12 +318,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">this.scroll = new Bscroll(this.<span class="variable">$refs</span>.box, &#123;click: <span class="literal">true</span>&#125;)</span><br><span class="line">一开始的点击事件被bscroll阻止了，设置这个才能点击</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">减少dom操作</span><br><span class="line">部署前，图片压缩，代码压缩</span><br><span class="line">优化js代码结构，减少冗余代码</span><br><span class="line">减少http请求，合理设置 HTTP缓存</span><br><span class="line">使用内容分发cdn加速</span><br><span class="line">静态资源缓存</span><br><span class="line">图片延迟加载</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/07/better-scroll点击事件不起作用/" data-id="cjm0km88s0004i8vdpiyabmpx" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/前端性能优化的方式/" data-id="cjm35zw590012bsvdsni2037g" class="article-share-link">Share</a>
       
       
     </footer>
@@ -337,10 +333,10 @@
 
 
   
-    <article id="post-vue-动态绑定style" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/06/vue-动态绑定style/" class="article-date">
-  <time datetime="2018-09-06T14:09:57.608Z" itemprop="datePublished">2018-09-06</time>
+    <a href="/2018/09/12/一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？/" class="article-date">
+  <time datetime="2018-09-12T02:28:23.544Z" itemprop="datePublished">2018-09-12</time>
 </a>
     
   </div>
@@ -351,7 +347,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/06/vue-动态绑定style/">vue-动态绑定style</a>
+      <a class="article-title" href="/2018/09/12/一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？/">一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？</a>
     </h1>
   
 
@@ -360,12 +356,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="对象绑定方式"><a href="#对象绑定方式" class="headerlink" title="对象绑定方式"></a>对象绑定方式</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:style=<span class="string">"&#123;属性名：属性值&#125;"</span></span><br></pre></td></tr></table></figure>
-<h2 id="数组绑定方式"><a href="#数组绑定方式" class="headerlink" title="数组绑定方式"></a>数组绑定方式</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">:style=<span class="string">"[data中的数据]"</span></span><br><span class="line">data:&#123;</span><br><span class="line">data中的数据:&#123;属性名:属性值&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">浏览器查找域名的 IP 地址</span><br><span class="line">这一步包括 DNS 具体的查找过程，包括：浏览器缓存-&gt;系统缓存-&gt;路由器缓存…</span><br><span class="line">浏览器向 web 服务器发送一个 HTTP 请求</span><br><span class="line">服务器的永久重定向响应（从 http://datafz.cn 到 http://www.datafz.cn）</span><br><span class="line">浏览器跟踪重定向地址</span><br><span class="line">服务器处理请求</span><br><span class="line">服务器返回一个 HTTP 响应</span><br><span class="line">浏览器显示 HTML</span><br><span class="line">浏览器发送请求获取嵌入在 HTML 中的资源（如图片、音频、视频、CSS、JS等等）</span><br><span class="line">浏览器发送异步请求</span><br></pre></td></tr></table></figure>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/06/vue-动态绑定style/" data-id="cjm0km8ai000hi8vd439gkurb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？/" data-id="cjm35zw3y000mbsvda68vq510" class="article-share-link">Share</a>
       
       
     </footer>
@@ -375,10 +371,10 @@
 
 
   
-    <article id="post-vue-动态绑定类名" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-图片预览" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/06/vue-动态绑定类名/" class="article-date">
-  <time datetime="2018-09-06T14:05:30.771Z" itemprop="datePublished">2018-09-06</time>
+    <a href="/2018/09/12/图片预览/" class="article-date">
+  <time datetime="2018-09-12T02:28:21.761Z" itemprop="datePublished">2018-09-12</time>
 </a>
     
   </div>
@@ -389,7 +385,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/06/vue-动态绑定类名/">vue-动态绑定类名</a>
+      <a class="article-title" href="/2018/09/12/图片预览/">图片预览</a>
     </h1>
   
 
@@ -398,12 +394,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="对象绑定方式"><a href="#对象绑定方式" class="headerlink" title="对象绑定方式"></a>对象绑定方式</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">:class=<span class="string">"&#123;类名：条件，类名：条件&#125;"</span></span><br><span class="line">如果条件为<span class="literal">true</span>，添加样式；如果条件为<span class="literal">false</span>，移除样式</span><br></pre></td></tr></table></figure>
-<h2 id="数组绑定方式"><a href="#数组绑定方式" class="headerlink" title="数组绑定方式"></a>数组绑定方式</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">:class=<span class="string">"[data中的数据，"</span>类名<span class="string">"，&#123;类名：条件&#125;]"</span></span><br><span class="line">data:&#123;</span><br><span class="line">data中的数据:“类名”，</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;图片预览&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;input <span class="built_in">type</span>=<span class="string">"file"</span> name=<span class="string">"file"</span> onchange=<span class="string">"showPreview(this)"</span> /&gt;</span><br><span class="line">    &lt;img id=<span class="string">"portrait"</span> src=<span class="string">""</span>&gt;</span><br><span class="line"></span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      <span class="keyword">function</span> showPreview(<span class="built_in">source</span>) &#123;</span><br><span class="line">        //    	console.log(<span class="built_in">source</span>)</span><br><span class="line">        var file = source.files[0];</span><br><span class="line">        <span class="keyword">if</span>(window.FileReader) &#123;</span><br><span class="line">          var reader = new FileReader();</span><br><span class="line">          reader.onloadend = <span class="keyword">function</span>(e) &#123;</span><br><span class="line">            document.getElementById(<span class="string">"portrait"</span>).src = e.target.result;</span><br><span class="line">          &#125;;</span><br><span class="line">          reader.readAsDataURL(file);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/06/vue-动态绑定类名/" data-id="cjm0km8ai000ii8vdo62h6f4f" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/图片预览/" data-id="cjm35zw5p0019bsvdm28slch2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -413,10 +409,10 @@
 
 
   
-    <article id="post-制作加载中图片" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-前端问题总结" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/06/制作加载中图片/" class="article-date">
-  <time datetime="2018-09-06T14:01:05.332Z" itemprop="datePublished">2018-09-06</time>
+    <a href="/2018/09/12/前端问题总结/" class="article-date">
+  <time datetime="2018-09-12T02:28:19.181Z" itemprop="datePublished">2018-09-12</time>
 </a>
     
   </div>
@@ -427,7 +423,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/06/制作加载中图片/">制作加载中图片</a>
+      <a class="article-title" href="/2018/09/12/前端问题总结/">前端问题总结</a>
     </h1>
   
 
@@ -436,12 +432,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://loading.io/</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">前后台数据交互问题（包括除了用ajax还能用什么）</span><br><span class="line"></span><br><span class="line">怎么规范代码</span><br><span class="line"></span><br><span class="line">事件流是什么</span><br><span class="line"></span><br><span class="line">浏览器的优化</span><br><span class="line"></span><br><span class="line">ios和安卓遇到什么兼容问题，怎么解决的</span><br><span class="line"></span><br><span class="line">ie兼容性</span><br><span class="line"></span><br><span class="line">在项目中遇到的问题，怎么解决的</span><br><span class="line"></span><br><span class="line">做没做过后台调取数据</span><br><span class="line"></span><br><span class="line">怎么跟后台进行数据交互（详细细节）</span><br><span class="line"></span><br><span class="line">原生app和混合app是什么，你有没有开发过</span><br><span class="line"></span><br><span class="line">h5的api等新特性</span><br><span class="line"></span><br><span class="line">es6是什么，用过没有</span><br><span class="line"></span><br><span class="line">在ios和安卓手机上同样的效果显示不一样怎么处理</span><br><span class="line"></span><br><span class="line">js问题较详细的问题有（js假如有三个数据同步完成，执行一个事件）</span><br><span class="line"></span><br><span class="line">轮播两种（无缝滚动，图片切换）原生js，要求可以手写</span><br><span class="line"></span><br><span class="line">用svg写过项目没有</span><br><span class="line"></span><br><span class="line">做过第三方登陆么，怎么做，思路</span><br><span class="line"></span><br><span class="line">缓存问题怎么解决</span><br><span class="line"></span><br><span class="line">折线图问题（调插件都不会写）</span><br><span class="line"></span><br><span class="line">自己不做返回按钮，用浏览器自带的按钮，点击之后直接退出应用，怎么解决</span><br><span class="line"></span><br><span class="line">ios和安卓显示不一样怎么解决</span><br><span class="line"></span><br><span class="line">文本框的光标在app上怎么取消</span><br><span class="line"></span><br><span class="line">移动项目打包之后在ios上怎么安装</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/06/制作加载中图片/" data-id="cjm0km8bd000si8vd9ysvnqga" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/前端问题总结/" data-id="cjm35zw590015bsvdfn6g12qm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -455,7 +451,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/page/4/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/6/">Next &raquo;</a>
+    <a class="extend prev" rel="prev" href="/page/4/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/6/">Next &raquo;</a>
   </nav>
 
 </section>
@@ -487,23 +483,23 @@
       <ul>
         
           <li>
-            <a href="/2018/09/12/json/">json</a>
+            <a href="/2018/09/15/上传头像/">上传头像</a>
           </li>
         
           <li>
-            <a href="/2018/09/12/伪元素/">::before</a>
+            <a href="/2018/09/15/重置表单样式/">重置表单样式</a>
           </li>
         
           <li>
-            <a href="/2018/09/12/文本溢出/">文本溢出</a>
+            <a href="/2018/09/15/切换按钮/">切换按钮</a>
           </li>
         
           <li>
-            <a href="/2018/09/12/scrollHeight/">scrollHeight</a>
+            <a href="/2018/09/15/模糊图片/">模糊图片</a>
           </li>
         
           <li>
-            <a href="/2018/09/12/clientWidth/">clientWidth</a>
+            <a href="/2018/09/15/复制(9)demo/">demo</a>
           </li>
         
       </ul>
