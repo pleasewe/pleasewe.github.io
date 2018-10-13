@@ -90,7 +90,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/三元运算符/" data-id="cjmhcjupm000wh4vdtnsh7pth" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/三元运算符/" data-id="cjn7kvpng000xj8vd66a2vfdb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -131,7 +131,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/JS经典之for循环闭包问题解决方法/" data-id="cjmhcjul50002h4vd93fh0bbe" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/JS经典之for循环闭包问题解决方法/" data-id="cjn7kvphk0003j8vddxnku5a6" class="article-share-link">Share</a>
       
       
     </footer>
@@ -169,7 +169,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/个人开发规范/" data-id="cjmhcjuq50010h4vdnv09u2ra" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/个人开发规范/" data-id="cjn7kvpoj0012j8vdnsrx5ya2" class="article-share-link">Share</a>
       
       
     </footer>
@@ -207,47 +207,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/css垂直居中/" data-id="cjmhcjumh0009h4vd9dx1di16" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-扁平化多维数组" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/09/12/扁平化多维数组/" class="article-date">
-  <time datetime="2018-09-12T02:28:28.072Z" itemprop="datePublished">2018-09-12</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/12/扁平化多维数组/">扁平化多维数组</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;老方法&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      var arr = [1, 3, 4, 5,</span><br><span class="line">      [6, [0, 1, 5], 9],</span><br><span class="line">      [2, 5, [1, 5]],</span><br><span class="line">      [5]</span><br><span class="line">      ];</span><br><span class="line">      </span><br><span class="line">      var result = [] </span><br><span class="line">      <span class="keyword">function</span> unfold(arr) &#123;</span><br><span class="line">        <span class="keyword">for</span>(var i = 0; i &lt; arr.length; i++) &#123;</span><br><span class="line">          <span class="keyword">if</span>(typeof arr[i] == <span class="string">"object"</span> &amp;&amp; arr[i].length &gt;= 1) &#123;</span><br><span class="line">            unfold(arr[i]);</span><br><span class="line">          &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            result.push(arr[i]);</span><br><span class="line">          &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> result</span><br><span class="line">      &#125;</span><br><span class="line"></span><br><span class="line">      console.log(unfold(arr))</span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;toString&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      var arr = [1, 3, 4, 5,</span><br><span class="line">      [6, [0, 1, 5], 9],</span><br><span class="line">      [2, 5, [1, 5]],</span><br><span class="line">      [5]</span><br><span class="line">      ];</span><br><span class="line">      </span><br><span class="line">     var newarr = arr.toString().split(<span class="string">','</span>)</span><br><span class="line">     console.log(newarr)</span><br><span class="line">     </span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"utf-8"</span> /&gt;</span><br><span class="line">    &lt;title&gt;es6的reduce函数&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">      var arr = [1, 3, 4, 5,</span><br><span class="line">      [6, [0, 1, 5], 9],</span><br><span class="line">      [2, 5, [1, 5]],</span><br><span class="line">      [5]</span><br><span class="line">      ];</span><br><span class="line">      </span><br><span class="line">    const flatten = arr =&gt; arr.reduce((a, b) =&gt; a.concat(Array.isArray(b) ? flatten(b) : b), []);</span><br><span class="line">    var result = flatten(arr)</span><br><span class="line">    console.log(result) </span><br><span class="line">    &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/扁平化多维数组/" data-id="cjmhcjuum001yh4vdiidywkts" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/css垂直居中/" data-id="cjn7kvpil0009j8vdt15m7dtj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -285,7 +245,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/前端工程化/" data-id="cjmhcjuqy0017h4vdt3ullk8n" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/前端工程化/" data-id="cjn7kvppa0017j8vdy2aiu8hk" class="article-share-link">Share</a>
       
       
     </footer>
@@ -323,7 +283,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/前端性能优化的方式/" data-id="cjmhcjuqu0016h4vdon0dtjud" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/前端性能优化的方式/" data-id="cjn7kvppk0019j8vd2d8q8t8o" class="article-share-link">Share</a>
       
       
     </footer>
@@ -361,7 +321,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？/" data-id="cjmhcjup9000th4vd9ubi73sk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？/" data-id="cjn7kvpmp000tj8vdrg1oclgv" class="article-share-link">Share</a>
       
       
     </footer>
@@ -399,7 +359,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/图片预览/" data-id="cjmhcjury001fh4vd97vk3kd0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/图片预览/" data-id="cjn7kvpr0001hj8vdayhhwqnd" class="article-share-link">Share</a>
       
       
     </footer>
@@ -437,7 +397,45 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/12/前端问题总结/" data-id="cjmhcjur70019h4vdyb3cod3b" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/12/前端问题总结/" data-id="cjn7kvpq7001cj8vd6t31rsio" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-字符串对象" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/10/字符串对象/" class="article-date">
+  <time datetime="2018-09-10T09:57:10.457Z" itemprop="datePublished">2018-09-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/10/字符串对象/">字符串对象</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  var str1 = <span class="string">'hello'</span></span><br><span class="line">  var str2 = new String(<span class="string">'hello'</span>)</span><br><span class="line">  document.write(typeof str1 + <span class="string">'&lt;br&gt;'</span>) //string</span><br><span class="line">  document.write(typeof str2 + <span class="string">'&lt;br&gt;'</span>) //object</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2018/09/10/字符串对象/" data-id="cjn7kvps1001nj8vd0v0kfodu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -491,15 +489,15 @@
           </li>
         
           <li>
-            <a href="/2018/09/17/复制(9)demo/">demo</a>
+            <a href="/2018/09/17/Math/">Math</a>
           </li>
         
           <li>
-            <a href="/2018/09/17/复制(8)demo/">demo</a>
+            <a href="/2018/09/17/循环/">循环</a>
           </li>
         
           <li>
-            <a href="/2018/09/17/复制(7)demo/">demo</a>
+            <a href="/2018/09/17/MUI的应用场景/">MUI的应用场景</a>
           </li>
         
       </ul>
