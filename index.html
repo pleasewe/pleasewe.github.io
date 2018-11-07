@@ -62,10 +62,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-Unicode码" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-JavaScript 数据类型" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/17/Unicode码/" class="article-date">
-  <time datetime="2018-09-17T07:53:49.437Z" itemprop="datePublished">2018-09-17</time>
+    <a href="/2018/10/17/JavaScript 数据类型/" class="article-date">
+  <time datetime="2018-10-17T09:10:23.317Z" itemprop="datePublished">2018-10-17</time>
 </a>
     
   </div>
@@ -76,7 +76,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/Unicode码/">Unicode码</a>
+      <a class="article-title" href="/2018/10/17/JavaScript 数据类型/">JavaScript 数据类型</a>
     </h1>
   
 
@@ -85,12 +85,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="keyword">function</span> myFun(e) &#123;</span><br><span class="line">    var e = e || event</span><br><span class="line">    var x = e.keyCode</span><br><span class="line">    //  var x = e.which</span><br><span class="line">    <span class="keyword">if</span>(x) &#123;</span><br><span class="line">      alert(<span class="string">'按键的Unicode码为：'</span> + x)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  //document.onkeydown = myFun</span><br><span class="line">  document.onkeypress = myFun</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="7种"><a href="#7种" class="headerlink" title="7种"></a>7种</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">字符串</span><br><span class="line">数字</span><br><span class="line">布尔</span><br><span class="line">数组</span><br><span class="line">对象</span><br><span class="line">Null</span><br><span class="line">Undefined</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/17/Unicode码/" data-id="cjn7l2p0a0004nsvdjyh9p813" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/17/JavaScript 数据类型/" data-id="cjo6wlanp000858vdn1iler3z" class="article-share-link">Share</a>
       
       
     </footer>
@@ -100,10 +100,10 @@
 
 
   
-    <article id="post-行内调用事件" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-jQuery对象与DOM对象之间的转换方法" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/17/行内调用事件/" class="article-date">
-  <time datetime="2018-09-17T07:53:47.816Z" itemprop="datePublished">2018-09-17</time>
+    <a href="/2018/10/17/jQuery对象与DOM对象之间的转换方法/" class="article-date">
+  <time datetime="2018-10-17T09:04:22.109Z" itemprop="datePublished">2018-10-17</time>
 </a>
     
   </div>
@@ -114,7 +114,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/行内调用事件/">行内调用事件</a>
+      <a class="article-title" href="/2018/10/17/jQuery对象与DOM对象之间的转换方法/">jQuery对象与DOM对象之间的转换方法</a>
     </h1>
   
 
@@ -123,12 +123,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"button"</span> onclick=<span class="string">"alert('good')"</span> value=<span class="string">"点击"</span>&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#div"</span>).html();</span><br><span class="line">$(<span class="string">"#div"</span>)[0].innerTHML;</span><br><span class="line">$(<span class="string">"#div"</span>).eq(0)[0].innerHTML;</span><br><span class="line">$(<span class="string">"#div"</span>).get(0).innerHTML;</span><br><span class="line">$(document.getElementById(<span class="string">"div"</span>)).html()</span><br></pre></td></tr></table></figure>
+<h2 id="jQuery对象转成DOM对象："><a href="#jQuery对象转成DOM对象：" class="headerlink" title="jQuery对象转成DOM对象："></a>jQuery对象转成DOM对象：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">"#box"</span>)</span><br><span class="line">$(<span class="string">"#box"</span>)[0]</span><br><span class="line">$(<span class="string">"#box"</span>).get(0)</span><br></pre></td></tr></table></figure>
+<h2 id="DOM对象转成jQuery对象："><a href="#DOM对象转成jQuery对象：" class="headerlink" title="DOM对象转成jQuery对象："></a>DOM对象转成jQuery对象：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">var box=document.getElementById(<span class="string">"box"</span>)</span><br><span class="line">var <span class="variable">$b</span>=$(box)</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/17/行内调用事件/" data-id="cjn7l2pjr0029nsvd4ggpuq9m" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/17/jQuery对象与DOM对象之间的转换方法/" data-id="cjo6wlaqb000n58vdu1wg62qu" class="article-share-link">Share</a>
       
       
     </footer>
@@ -138,10 +140,10 @@
 
 
   
-    <article id="post-Math" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-复制(9)demo" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/17/Math/" class="article-date">
-  <time datetime="2018-09-17T07:53:46.238Z" itemprop="datePublished">2018-09-17</time>
+    <a href="/2018/10/15/复制(9)demo/" class="article-date">
+  <time datetime="2018-10-15T01:37:09.956Z" itemprop="datePublished">2018-10-15</time>
 </a>
     
   </div>
@@ -152,7 +154,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/Math/">Math</a>
+      <a class="article-title" href="/2018/10/15/复制(9)demo/">demo</a>
     </h1>
   
 
@@ -161,14 +163,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="0-m-lt-result-lt-34-n"><a href="#0-m-lt-result-lt-34-n" class="headerlink" title="0(m)&lt;result&lt;34(n)"></a>0(m)&lt;result&lt;34(n)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> random(m, n) &#123;</span><br><span class="line">      console.log(Math.random() * (n + 1 - m))</span><br><span class="line">    &#125;</span><br><span class="line">    random(0, 34)</span><br></pre></td></tr></table></figure>
-<h2 id="0-m-lt-result-lt-35-n-1"><a href="#0-m-lt-result-lt-35-n-1" class="headerlink" title="0(m)=&lt;result=&lt;35(n-1)"></a>0(m)=&lt;result=&lt;35(n-1)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> floor(m, n) &#123;</span><br><span class="line">      console.log(Math.floor(Math.random() * (n + 1 - m)))</span><br><span class="line">    &#125;</span><br><span class="line">    floor(0, 36)</span><br></pre></td></tr></table></figure>
-<h2 id="1-m-1-lt-result-lt-35-n-1"><a href="#1-m-1-lt-result-lt-35-n-1" class="headerlink" title="1(m+1)=&lt;result=&lt;35(n+1)"></a>1(m+1)=&lt;result=&lt;35(n+1)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> ceil(m, n) &#123;</span><br><span class="line">      console.log(Math.ceil(Math.random() * (n + 1 - m)))</span><br><span class="line">    &#125;</span><br><span class="line">    ceil(0, 35)</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/17/Math/" data-id="cjn7l2ozz0003nsvdqq0p8udn" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/15/复制(9)demo/" data-id="cjo6wlaxo001p58vdjivhgaps" class="article-share-link">Share</a>
       
       
     </footer>
@@ -178,10 +178,10 @@
 
 
   
-    <article id="post-循环" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-防止页面抖动" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/17/循环/" class="article-date">
-  <time datetime="2018-09-17T07:53:44.556Z" itemprop="datePublished">2018-09-17</time>
+    <a href="/2018/10/15/防止页面抖动/" class="article-date">
+  <time datetime="2018-10-15T01:37:08.593Z" itemprop="datePublished">2018-10-15</time>
 </a>
     
   </div>
@@ -192,7 +192,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/循环/">循环</a>
+      <a class="article-title" href="/2018/10/15/防止页面抖动/">防止页面抖动</a>
     </h1>
   
 
@@ -201,17 +201,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="做循环的时候-首先要把思路理清楚-回答四个问题"><a href="#做循环的时候-首先要把思路理清楚-回答四个问题" class="headerlink" title="做循环的时候,首先要把思路理清楚,回答四个问题:"></a>做循环的时候,首先要把思路理清楚,回答四个问题:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">初始化条件?</span><br><span class="line">控制循环的条件?</span><br><span class="line">反复做的事?</span><br><span class="line">怎样进入下一循环?</span><br></pre></td></tr></table></figure>
-<h2 id="对1到100求和"><a href="#对1到100求和" class="headerlink" title="对1到100求和:"></a>对1到100求和:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">初始化条件:sum=0;num=1</span><br><span class="line">控制循环的条件:num&lt;=100</span><br><span class="line">反复做的事:sum = sum  + num（或sum += num）</span><br><span class="line">怎样进入下一循环:num++</span><br></pre></td></tr></table></figure>
-<h2 id="while"><a href="#while" class="headerlink" title="while"></a>while</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  var sum = 0;</span><br><span class="line">  var num = 1;</span><br><span class="line">  <span class="keyword">while</span>(num &lt;= 100) &#123;</span><br><span class="line">    sum += num;</span><br><span class="line">    num++;</span><br><span class="line">  &#125;</span><br><span class="line">  document.write(sum + <span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="do…while"><a href="#do…while" class="headerlink" title="do…while"></a>do…while</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  var sum = 0;</span><br><span class="line">  var num = 1;</span><br><span class="line">  <span class="keyword">do</span> &#123;</span><br><span class="line">    sum += num;</span><br><span class="line">    num++;</span><br><span class="line">  &#125; <span class="keyword">while</span> (num &lt;= 100)</span><br><span class="line">  document.write(sum + <span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="for"><a href="#for" class="headerlink" title="for"></a>for</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">  var sum = 0;</span><br><span class="line">  <span class="keyword">for</span>(var num = 1; num &lt;= 100; num++) &#123;</span><br><span class="line">    sum += num;</span><br><span class="line">  &#125;</span><br><span class="line">  document.write(sum + <span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="三种循环是可以替换的，但是三种循环也有一定的差异："><a href="#三种循环是可以替换的，但是三种循环也有一定的差异：" class="headerlink" title="三种循环是可以替换的，但是三种循环也有一定的差异："></a>三种循环是可以替换的，但是三种循环也有一定的差异：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> 当<span class="keyword">while</span>循环开始后，先判断条件是否满足，如果满足就执行循环体内的语句，执行完毕后再回来判断条件是否满足，如此无限重复。直到条件不满足时，执行<span class="keyword">while</span>循环后边的语句。</span><br><span class="line"><span class="keyword">for</span>循环适用于知道范围的情况（或知道循环次数的情况），当循环次数（或范围）不确定时用<span class="keyword">while</span>循环或do...while循环。 </span><br><span class="line"><span class="keyword">while</span>循环和<span class="keyword">do</span>...循环，当第一次进入循环就不满足条件时，<span class="keyword">while</span>循环不做，do...while执行一次。其他情况输出结果是一样的。</span><br></pre></td></tr></table></figure>
-
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.swiper &#123;</span><br><span class="line">	width: 100%;</span><br><span class="line">	height: 0;</span><br><span class="line">	padding-bottom: 40%;</span><br><span class="line">	overflow: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="有兼容性问题"><a href="#有兼容性问题" class="headerlink" title="有兼容性问题"></a>有兼容性问题</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.swiper&#123;</span><br><span class="line">	width: 100%;</span><br><span class="line">	height: 43.35vw;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/17/循环/" data-id="cjn7l2phn001ynsvdpnwrdxb2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/15/防止页面抖动/" data-id="cjo6wlb3b002s58vdmr2iznjc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -221,10 +216,10 @@
 
 
   
-    <article id="post-MUI的应用场景" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-闭包" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/17/MUI的应用场景/" class="article-date">
-  <time datetime="2018-09-17T07:53:42.866Z" itemprop="datePublished">2018-09-17</time>
+    <a href="/2018/10/15/闭包/" class="article-date">
+  <time datetime="2018-10-15T01:37:06.946Z" itemprop="datePublished">2018-10-15</time>
 </a>
     
   </div>
@@ -235,7 +230,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/MUI的应用场景/">MUI的应用场景</a>
+      <a class="article-title" href="/2018/10/15/闭包/">闭包</a>
     </h1>
   
 
@@ -244,12 +239,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">追求低成本</span><br><span class="line">追求速度</span><br><span class="line">非重度体验项目</span><br><span class="line">创业类项目</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">闭包（closure）是Javascript语言的一个难点，也是它的特色，很多高级应用都要依靠闭包实现。</span><br><span class="line">闭包就是能够读取其他函数内部变量的函数。</span><br><span class="line">由于在javascript中，只有函数内部的子函数才能读取局部变量，所以闭包可以理解成“定义在一个函数内部的函数“。在本质上，闭包是将函数内部和函数外部连接起来的桥梁。</span><br><span class="line">变量的作用域无非就是两种：全局变量和局部变量。</span><br><span class="line">Javascript语言的特殊之处，就在于函数内部可以直接读取全局变量。</span><br></pre></td></tr></table></figure>
+<h2 id="如何从外部读取局部变量？"><a href="#如何从外部读取局部变量？" class="headerlink" title="如何从外部读取局部变量？"></a>如何从外部读取局部变量？</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1）由于闭包会使得函数中的变量都被保存在内存中，内存消耗很大，所以不能滥用闭包，否则会造成网页的性能问题，在IE中可能导致内存泄露。解决方法是，在退出函数之前，将不使用的局部变量全部删除。</span><br><span class="line">2）闭包会在父函数外部，改变父函数内部变量的值。所以，如果你把父函数当作对象（object）使用，把闭包当作它的公用方法（Public Method），把内部变量当作它的私有属性（private value），这时一定要小心，不要随便改变父函数内部变量的值。</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/17/MUI的应用场景/" data-id="cjn7l2ozf0001nsvd65t3g3vy" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/15/闭包/" data-id="cjo6wlb2w002r58vd9rk7dc4f" class="article-share-link">Share</a>
       
       
     </footer>
@@ -259,10 +255,10 @@
 
 
   
-    <article id="post-padding" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-面向对象" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/17/padding/" class="article-date">
-  <time datetime="2018-09-17T07:53:41.302Z" itemprop="datePublished">2018-09-17</time>
+    <a href="/2018/10/15/面向对象/" class="article-date">
+  <time datetime="2018-10-15T01:37:04.913Z" itemprop="datePublished">2018-10-15</time>
 </a>
     
   </div>
@@ -273,7 +269,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/padding/">padding</a>
+      <a class="article-title" href="/2018/10/15/面向对象/">面向对象</a>
     </h1>
   
 
@@ -282,12 +278,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">width: 100%;</span><br><span class="line">padding: 0 20px;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">面向对象的思想就是一切皆为对象。</span><br><span class="line">面向对象三大特性：封装、继承、多态。</span><br><span class="line">面向对象关注的是对象，面向过程关注的是执行过程。面向对象的出现要晚于面向过程，代表语言是java，面向过程的代表是C。现在大多数高级语言都是面向对象的，因为面向对象更适合开发大型项目。</span><br><span class="line">例如：</span><br><span class="line">人：属性：手，脚，头等</span><br><span class="line">功能：拿东西，走路，思考等</span><br><span class="line">面向对象就是将人进行封装，当你需要使用时，比如向右走2步，就会调用属性脚和头，功能走路和思考等。</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/17/padding/" data-id="cjn7l2p4s000hnsvdpepm9vcb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/15/面向对象/" data-id="cjo6wlb3b002u58vdgcaphlzh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -297,10 +293,10 @@
 
 
   
-    <article id="post-reset" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-H5" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/17/reset/" class="article-date">
-  <time datetime="2018-09-17T07:53:39.445Z" itemprop="datePublished">2018-09-17</time>
+    <a href="/2018/10/15/H5/" class="article-date">
+  <time datetime="2018-10-15T01:36:55.287Z" itemprop="datePublished">2018-10-15</time>
 </a>
     
   </div>
@@ -311,7 +307,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/reset/">reset</a>
+      <a class="article-title" href="/2018/10/15/H5/">H5</a>
     </h1>
   
 
@@ -320,12 +316,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">@charset <span class="string">"utf-8"</span>;</span><br><span class="line">body,</span><br><span class="line">div,</span><br><span class="line">p,</span><br><span class="line">h1,</span><br><span class="line">h2,</span><br><span class="line">h3,</span><br><span class="line">h4,</span><br><span class="line">h5,</span><br><span class="line">h6,</span><br><span class="line">ul,</span><br><span class="line">li,</span><br><span class="line">ol,</span><br><span class="line">img,</span><br><span class="line">p,</span><br><span class="line">span,</span><br><span class="line">input,</span><br><span class="line">form &#123;</span><br><span class="line">	margin: 0;</span><br><span class="line">	padding: 0;</span><br><span class="line">	background: none;</span><br><span class="line">	border: none;</span><br><span class="line">	outline: none;</span><br><span class="line">	box-sizing: border-box;</span><br><span class="line">	vertical-align: top;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">body &#123;</span><br><span class="line">	font-family: <span class="string">"Microsoft Yahei"</span>, Arial, Helvetica, sans-serif;</span><br><span class="line">	font-size: 16px;	</span><br><span class="line">	color: <span class="comment">#282828;</span></span><br><span class="line">&#125;</span><br><span class="line">a &#123;</span><br><span class="line">	color: <span class="comment">#282828;</span></span><br><span class="line">	text-decoration: none;</span><br><span class="line">&#125;</span><br><span class="line">a:hover &#123;</span><br><span class="line">	color: <span class="comment">#282828;</span></span><br><span class="line">	text-decoration: none;</span><br><span class="line">&#125;</span><br><span class="line">ul &#123;</span><br><span class="line">	list-style: none;</span><br><span class="line">&#125;</span><br><span class="line">.clear:after &#123;</span><br><span class="line">	content: <span class="string">""</span>;</span><br><span class="line">	height: 0;</span><br><span class="line">	display: block;</span><br><span class="line">	visibility: hidden;</span><br><span class="line">	clear: both;</span><br><span class="line">&#125;</span><br><span class="line">.clear &#123;</span><br><span class="line">    zoom:1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="新标签"><a href="#新标签" class="headerlink" title="新标签"></a>新标签</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;header&gt;&lt;/header&gt;页眉</span><br><span class="line">&lt;nav&gt;&lt;/nav&gt;导航</span><br><span class="line">&lt;section&gt;&lt;/section&gt;文档中的人区段</span><br><span class="line">&lt;hgroup&gt;&lt;/hgroup&gt;网页标题的组合</span><br><span class="line">&lt;article&gt;&lt;/article&gt;文章</span><br><span class="line">&lt;aside&gt;&lt;/aside&gt;文章的侧边栏</span><br><span class="line">&lt;figure&gt;&lt;/figure&gt;一组媒体对象以及文字</span><br><span class="line">&lt;figcaption&gt;&lt;/figcaption&gt;figure的标题</span><br><span class="line">&lt;footer&gt;&lt;/footer&gt;页脚</span><br><span class="line">&lt;time&gt;&lt;/time&gt;日期和时间</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/17/reset/" data-id="cjn7l2p5n000knsvdg3me6bpo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/15/H5/" data-id="cjo6wlamu000258vdknnx8o58" class="article-share-link">Share</a>
       
       
     </footer>
@@ -335,10 +331,10 @@
 
 
   
-    <article id="post-小程序" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Ajax" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/17/小程序/" class="article-date">
-  <time datetime="2018-09-17T07:53:37.843Z" itemprop="datePublished">2018-09-17</time>
+    <a href="/2018/10/15/Ajax/" class="article-date">
+  <time datetime="2018-10-15T01:36:53.818Z" itemprop="datePublished">2018-10-15</time>
 </a>
     
   </div>
@@ -349,7 +345,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/小程序/">小程序</a>
+      <a class="article-title" href="/2018/10/15/Ajax/">Ajax</a>
     </h1>
   
 
@@ -358,16 +354,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<h2 id="什么是微信小程序"><a href="#什么是微信小程序" class="headerlink" title="什么是微信小程序"></a>什么是微信小程序</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">不需要下载安装即可使用</span><br><span class="line">用户“用完即走”，不用关心是否安装太多应用</span><br><span class="line">应用将无处不在，随时可用</span><br></pre></td></tr></table></figure>
-<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">小程序适合做简单的、用完即走的应用</span><br><span class="line">小程序适合低频的应用</span><br><span class="line">小程序适合性能要求不高的应用</span><br></pre></td></tr></table></figure>
-<h2 id="传统APP与微信小程序比较"><a href="#传统APP与微信小程序比较" class="headerlink" title="传统APP与微信小程序比较"></a>传统APP与微信小程序比较</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">体验差，成本高</span><br><span class="line">流程简单，跨平台</span><br></pre></td></tr></table></figure>
-<h2 id="对开发者的影响"><a href="#对开发者的影响" class="headerlink" title="对开发者的影响"></a>对开发者的影响</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">短期内将提升市场对JavaScript程序员的需求量</span><br><span class="line">小程序是零基础开发者很好的入门平台</span><br><span class="line">小程序不可以使用现在已经存在的JavaScript组件库</span><br><span class="line">开发环境和开发逻辑极其简单，非常适合新手入门</span><br></pre></td></tr></table></figure>
-<h2 id="分辨率"><a href="#分辨率" class="headerlink" title="分辨率"></a>分辨率</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iPhone 6下1px=1rpx</span><br><span class="line">iPhone 6 Plus下1px=0.6rpx</span><br></pre></td></tr></table></figure>
+<h2 id="什么是Ajax"><a href="#什么是Ajax" class="headerlink" title="什么是Ajax"></a>什么是Ajax</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Ajax的核心理念在于使用XMLHttpRequest对象发送异步请求。Ajax并不是一门新的语言或技术,它实际上是几项技术按一定的方式组合在一起,共同的协作中发挥各自的作用。</span><br><span class="line">Ajax的一个最大的特点是无需刷新页面便可向服务器传输或读写数据(又称无刷新更新页面),这一特点主要得益于XMLHTTP组件</span><br><span class="line">XMLHttpRequest对象。</span><br></pre></td></tr></table></figure>
+<h2 id="Ajax的优点"><a href="#Ajax的优点" class="headerlink" title="Ajax的优点"></a>Ajax的优点</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">减轻服务器的负担。Ajax的原则是<span class="string">"按需取数据"</span>。</span><br><span class="line">无需刷新页面,减少用户心理和实际的等待时间。</span><br><span class="line">带来更好的用户体验。</span><br><span class="line">可以把以前一些服务器负担的工作转移到客户端,利用客户端闲置的能力来处理,减轻服务器负担,充分利用宽带资源,节约空间和宽带租用成本。</span><br><span class="line">可以调用外部数据。</span><br><span class="line">基于标准化的并被广泛支持的技术,不需要下载插件或者小程序。</span><br><span class="line">进一步促进页面呈现与数据分离。</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/17/小程序/" data-id="cjn7l2pgp001unsvdrz60o9lb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/15/Ajax/" data-id="cjo6wlame000158vde5e0elah" class="article-share-link">Share</a>
       
       
     </footer>
@@ -377,10 +370,10 @@
 
 
   
-    <article id="post-switch" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-函数声明和函数表达式" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/17/switch/" class="article-date">
-  <time datetime="2018-09-17T07:53:36.222Z" itemprop="datePublished">2018-09-17</time>
+    <a href="/2018/10/15/函数声明和函数表达式/" class="article-date">
+  <time datetime="2018-10-15T01:36:52.108Z" itemprop="datePublished">2018-10-15</time>
 </a>
     
   </div>
@@ -391,7 +384,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/switch/">switch</a>
+      <a class="article-title" href="/2018/10/15/函数声明和函数表达式/">函数声明和函数表达式</a>
     </h1>
   
 
@@ -400,13 +393,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  var month = <span class="string">'1'</span></span><br><span class="line">  var num</span><br><span class="line">  switch(month) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'1'</span>:</span><br><span class="line">      num = 31;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'2'</span>:</span><br><span class="line">      num = 28 + <span class="string">'或'</span> + 29;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'3'</span>:</span><br><span class="line">      num = 31;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'4'</span>:</span><br><span class="line">      num = 30;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'5'</span>:</span><br><span class="line">      num = 31;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'6'</span>:</span><br><span class="line">      num = 30;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'7'</span>:</span><br><span class="line">      num = 31;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'8'</span>:</span><br><span class="line">      num = 31;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'9'</span>:</span><br><span class="line">      num = 30;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'10'</span>:</span><br><span class="line">      num = 31;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'11'</span>:</span><br><span class="line">      num = 30;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'12'</span>:</span><br><span class="line">      num = 31;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  var month = <span class="string">'2'</span></span><br><span class="line">  var num</span><br><span class="line">  switch(month) &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'1'</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'3'</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'5'</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'7'</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'8'</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'10'</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'12'</span>:</span><br><span class="line">      num = 31;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'2'</span>:</span><br><span class="line">      num = 28 + <span class="string">'或'</span> + 29;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'4'</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'6'</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'9'</span>:</span><br><span class="line">    <span class="keyword">case</span> <span class="string">'11'</span>:</span><br><span class="line">      num = 30;</span><br><span class="line">      alert(month + <span class="string">'月有'</span> + num + <span class="string">'天'</span>);</span><br><span class="line">      <span class="built_in">break</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="函数声明"><a href="#函数声明" class="headerlink" title="函数声明"></a>函数声明</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fn();//正确</span><br><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">fn</span></span>() &#123;</span><br><span class="line">    console.log(123)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="函数表达式"><a href="#函数表达式" class="headerlink" title="函数表达式"></a>函数表达式</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fn();//错误，var fn=undefined;</span><br><span class="line">var fn = <span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">    console.log(456)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/17/switch/" data-id="cjn7l2p7k000qnsvdv8634vpo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/15/函数声明和函数表达式/" data-id="cjo6wlatc001b58vdj82gadab" class="article-share-link">Share</a>
       
       
     </footer>
@@ -416,10 +409,10 @@
 
 
   
-    <article id="post-综合运用三种对话框" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Jquery" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/17/综合运用三种对话框/" class="article-date">
-  <time datetime="2018-09-17T07:53:34.543Z" itemprop="datePublished">2018-09-17</time>
+    <a href="/2018/10/15/Jquery/" class="article-date">
+  <time datetime="2018-10-15T01:36:43.517Z" itemprop="datePublished">2018-10-15</time>
 </a>
     
   </div>
@@ -430,7 +423,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/综合运用三种对话框/">综合运用三种对话框</a>
+      <a class="article-title" href="/2018/10/15/Jquery/">Jquery</a>
     </h1>
   
 
@@ -439,12 +432,15 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="keyword">function</span> <span class="function"><span class="title">circle</span></span>() &#123;</span><br><span class="line">    var str = prompt(<span class="string">'请输入圆的半径:'</span>)</span><br><span class="line">    var radius = parseFloat(str)</span><br><span class="line">    var area = Math.PI * radius * radius</span><br><span class="line">    alert(<span class="string">'圆的面积为:'</span> + area.toFixed(2))</span><br><span class="line">    var con = confirm(<span class="string">'您对这个计算满意吗？'</span>)</span><br><span class="line">    <span class="keyword">if</span>(con) &#123;</span><br><span class="line">      alert(<span class="string">'感谢您的评价'</span>)</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">      alert(<span class="string">'请再思考一下'</span>)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  circle()</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="什么是Jquery"><a href="#什么是Jquery" class="headerlink" title="什么是Jquery?"></a>什么是Jquery?</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Jquery是一个优秀的javascript框架。</span><br><span class="line">Jquery是继Prototype之后又一个优秀的Javascript框架。</span><br><span class="line">其宗旨是——WRITE LESS,DO MORE,写更少的代码,做更多的事情。它是轻量级的js库，这是其它的js库所不及的，它兼容CSS3，还兼容各种常用浏览器。</span><br><span class="line">Jquery是一个快速的，简洁的JavaScript库，使用户能更方便地处理HTML documents、events、实现动画效果，并且方便地为网站提供AJAX交互。</span><br><span class="line">Jquery还有一个比较大的优势是，它的文档说明很全，而且各种应用也说得很详细，同时还有许多成熟的插件可供选择。Jquery能够使用户的html页保持代码和html内容分离，也就是说，不用再在html里面插入一堆js来调用命令了，只需定义id即可。</span><br></pre></td></tr></table></figure>
+<h2 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">(1).一款轻量级的js框架。</span><br><span class="line">JQuery核心js文件才几十kb，不会影响页面加载速度。与Extjs相比要轻便的多。</span><br><span class="line">(2).丰富的DOM选择器(CSS1-3 + XPath)</span><br><span class="line">JQuery的选择器用起来很方便，好比要找到某个dom对象的相邻元素js可能要写好几行代码，而JQuery一行代码就搞定了，再比如要将一个表格的隔行变色，JQuery也是一行代码搞定。</span><br><span class="line">(3).链式表达式。</span><br><span class="line">JQuery的链式操作可以把多个操作写在一行代码里，更加简洁。</span><br><span class="line">(4).事件、样式、动画支持。</span><br><span class="line">JQuery还简化了js操作css的代码，并且代码的可读性也比js要强。</span><br><span class="line">(5).Ajax操作支持。</span><br><span class="line">JQuery简化了AJAX操作，后台只需返回一个JSON格式的字符串就能完成与前台的通信。</span><br><span class="line">(6).跨浏览器兼容。</span><br><span class="line">JQuery基本兼容了现在主流的浏览器，不用再为浏览器的兼容问题而伤透脑筋。</span><br><span class="line">(7).插件扩展开发。</span><br><span class="line">JQuery有着丰富的第三方的插件，例如：树形菜单、日期控件、图片切换插件、弹出窗口等等基本前台页面上的组件都有对应插件，并且用JQuery插件做出来的效果很炫，并且可以根据自己需要去改写和封装插件，简单实用。</span><br><span class="line">(8).可扩展性强。</span><br><span class="line">JQuery提供了扩展接口：JQuery.extend(object),可以在JQuery的命名空间上增加新函数。JQuery的所有插件都是基于这个扩展接口开发的。</span><br></pre></td></tr></table></figure>
+<h2 id="常规选择器"><a href="#常规选择器" class="headerlink" title="常规选择器"></a>常规选择器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#box'</span>)，<span class="comment">#id 选择器</span></span><br><span class="line">$(<span class="string">'.box'</span>)，.class 选择器</span><br><span class="line">$(<span class="string">'div'</span>)，.标签 选择器</span><br><span class="line">$(<span class="string">'#box&gt;p'</span>)</span><br><span class="line">$(<span class="string">'#box p'</span>)</span><br><span class="line">$(<span class="string">'div,p,strong'</span>)</span><br><span class="line">$(<span class="string">'#box,.pp,strong'</span>)</span><br><span class="line">$(<span class="string">'*'</span>)在全局范围内使用*号，会极大消耗内存，所以不建议在全局使用</span><br><span class="line">$(<span class="string">'*'</span>)[0].nodeName</span><br><span class="line">$(<span class="string">'ul li *'</span>)通配选择器一般用在局部的环境内</span><br><span class="line">$(<span class="string">'div'</span>).find(<span class="string">'p'</span>)</span><br><span class="line">$(<span class="string">'#box&gt;p'</span>)</span><br><span class="line">$(<span class="string">'#box'</span>).children(<span class="string">'p'</span>)</span><br><span class="line">$(<span class="string">'#box+p'</span>)</span><br><span class="line">$(<span class="string">'#box'</span>).next(<span class="string">'p'</span>)</span><br><span class="line">$(<span class="string">'#box'</span>).next()</span><br><span class="line">$(<span class="string">'#box'</span>).prev(<span class="string">'p'</span>)</span><br><span class="line">$(<span class="string">'#box'</span>).prev().</span><br><span class="line">$(<span class="string">'#box~p'</span>).</span><br><span class="line">$(<span class="string">'#box'</span>).nextAll(<span class="string">'p'</span>)</span><br><span class="line">$(<span class="string">'#box'</span>).prevAll(<span class="string">'p'</span>)</span><br><span class="line">$(<span class="string">'#box'</span>).nextAll(<span class="string">'p'</span>)</span><br><span class="line">$(<span class="string">'#box'</span>).siblings(<span class="string">'p'</span>)</span><br><span class="line">$(<span class="string">'#box'</span>).prevUntil(<span class="string">'p'</span>)</span><br><span class="line">$(<span class="string">'#box'</span>).nextUntil(<span class="string">'p'</span>)</span><br><span class="line">$(<span class="string">'a[title]'</span>)</span><br><span class="line">$(<span class="string">'a[title=num1]'</span>)</span><br><span class="line">$(<span class="string">'a[title^=num]'</span>).</span><br><span class="line">$(<span class="string">'a[title$=3]'</span>)</span><br><span class="line">$(<span class="string">'a[title|=no]'</span>)</span><br><span class="line">$(<span class="string">'a[title!=num1]'</span>)</span><br><span class="line">$(<span class="string">'a[title~=aa]'</span>)</span><br><span class="line">$(<span class="string">'a[title*=der]'</span>)</span><br><span class="line">$(<span class="string">'a[data][title*=der]'</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="过滤选择器"><a href="#过滤选择器" class="headerlink" title="过滤选择器"></a>过滤选择器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'li:first'</span>)</span><br><span class="line">$(<span class="string">'li:last'</span>)</span><br><span class="line">$(<span class="string">'ul:first li:last'</span>)</span><br><span class="line">$(<span class="string">'ul:first,li:last'</span>)</span><br><span class="line">$(<span class="string">'li:not(.aa)'</span>)</span><br><span class="line">$(<span class="string">'li:even'</span>)</span><br><span class="line">$(<span class="string">'li:odd'</span>)</span><br><span class="line">$(<span class="string">'li:eq(1)'</span>)</span><br><span class="line">$(<span class="string">'li:eq(-1)'</span>)</span><br><span class="line">$(<span class="string">'li:eq(-2)'</span>)</span><br><span class="line">$(<span class="string">'li:gt(2)'</span>)</span><br><span class="line">$(<span class="string">'li:gt(-2)'</span>)</span><br><span class="line">$(<span class="string">'li:lt(2)'</span>)</span><br><span class="line">$(<span class="string">'li:lt(-2)'</span>)</span><br><span class="line">$(<span class="string">'div :header'</span>)</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/17/综合运用三种对话框/" data-id="cjn7l2pk5002bnsvdd3nfkvsj" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/15/Jquery/" data-id="cjo6wlamu000358vd5kqxzwjw" class="article-share-link">Share</a>
       
       
     </footer>
@@ -458,7 +454,7 @@
 
   <nav id="page-nav">
     
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/2/">Next &raquo;</a>
   </nav>
 
 </section>
@@ -477,7 +473,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li></ul>
     </div>
   </div>
 
@@ -490,23 +486,23 @@
       <ul>
         
           <li>
-            <a href="/2018/09/17/Unicode码/">Unicode码</a>
+            <a href="/2018/10/17/JavaScript 数据类型/">JavaScript 数据类型</a>
           </li>
         
           <li>
-            <a href="/2018/09/17/行内调用事件/">行内调用事件</a>
+            <a href="/2018/10/17/jQuery对象与DOM对象之间的转换方法/">jQuery对象与DOM对象之间的转换方法</a>
           </li>
         
           <li>
-            <a href="/2018/09/17/Math/">Math</a>
+            <a href="/2018/10/15/复制(9)demo/">demo</a>
           </li>
         
           <li>
-            <a href="/2018/09/17/循环/">循环</a>
+            <a href="/2018/10/15/防止页面抖动/">防止页面抖动</a>
           </li>
         
           <li>
-            <a href="/2018/09/17/MUI的应用场景/">MUI的应用场景</a>
+            <a href="/2018/10/15/闭包/">闭包</a>
           </li>
         
       </ul>

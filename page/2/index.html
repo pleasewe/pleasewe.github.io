@@ -62,10 +62,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-选择对象" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-浏览器兼容性" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/17/选择对象/" class="article-date">
-  <time datetime="2018-09-17T07:53:32.094Z" itemprop="datePublished">2018-09-17</time>
+    <a href="/2018/10/15/浏览器兼容性/" class="article-date">
+  <time datetime="2018-10-15T01:36:41.546Z" itemprop="datePublished">2018-10-15</time>
 </a>
     
   </div>
@@ -76,7 +76,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/17/选择对象/">选择对象</a>
+      <a class="article-title" href="/2018/10/15/浏览器兼容性/">浏览器兼容性</a>
     </h1>
   
 
@@ -85,12 +85,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">var list = &#123;</span><br><span class="line">  100: <span class="string">"电影"</span>,</span><br><span class="line">  <span class="string">'200'</span>: <span class="string">"音乐"</span>,</span><br><span class="line">  300: <span class="string">"句子"</span></span><br><span class="line">&#125;[<span class="string">'200'</span>]</span><br><span class="line"></span><br><span class="line">console.log(list)</span><br></pre></td></tr></table></figure>
+<h2 id="HTML对象获取"><a href="#HTML对象获取" class="headerlink" title="HTML对象获取"></a>HTML对象获取</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Firefox:document.getElementById(<span class="string">"idName"</span>);</span><br><span class="line">ie:document.idname或者document.getElementById(<span class="string">"idName"</span>)</span><br><span class="line">解决办法：统一使用document.getElementById(<span class="string">"idName"</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="const"><a href="#const" class="headerlink" title="const"></a>const</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Firefox:可以使用const关键字或var关键字来定义常量;</span><br><span class="line">IE:只能使用var关键字来定义常量. </span><br><span class="line">解决方法：统一使用var关键字来定义常量</span><br></pre></td></tr></table></figure>
+<h2 id="event-x与event-y"><a href="#event-x与event-y" class="headerlink" title="event.x与event.y"></a>event.x与event.y</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">IE:event对象有x,y属性,但是没有pageX,pageY属性;</span><br><span class="line">Firefox:event对象有pageX,pageY属性,但是没有x,y属性. </span><br><span class="line">解决方法:使用mX(mX=event.x?event.x:event.pageX)来代替IE下的event.x或者Firefox下的event.pageX</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/17/选择对象/" data-id="cjn7l2pkm002ensvd8n0srugy" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/15/浏览器兼容性/" data-id="cjo6wlb0a002a58vdpo3ue7kx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -100,10 +102,10 @@
 
 
   
-    <article id="post-上传头像" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-原型链" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/15/上传头像/" class="article-date">
-  <time datetime="2018-09-15T08:11:50.056Z" itemprop="datePublished">2018-09-15</time>
+    <a href="/2018/10/15/原型链/" class="article-date">
+  <time datetime="2018-10-15T01:03:23.290Z" itemprop="datePublished">2018-10-15</time>
 </a>
     
   </div>
@@ -114,7 +116,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/15/上传头像/">上传头像</a>
+      <a class="article-title" href="/2018/10/15/原型链/">原型链</a>
     </h1>
   
 
@@ -123,12 +125,13 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"https://cdn.bootcss.com/jquery/1.8.3/jquery.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">    &lt;title&gt;上传头像&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">      .face &#123;</span><br><span class="line">        width: 130px;</span><br><span class="line">        height: 130px;</span><br><span class="line">        background: url(<span class="string">"images/face_bg.jpg"</span>) center no-repeat;</span><br><span class="line">        background-size: 100% 100%;</span><br><span class="line">        border-radius: 100%;</span><br><span class="line">      &#125;</span><br><span class="line">      </span><br><span class="line">      .face form &#123;</span><br><span class="line">        width: 130px;</span><br><span class="line">        height: 130px;</span><br><span class="line">        border-radius: 100%;</span><br><span class="line">        position: absolute;</span><br><span class="line">      &#125;</span><br><span class="line">      </span><br><span class="line">      .face form input[<span class="built_in">type</span>=file] &#123;</span><br><span class="line">        width: 100%;</span><br><span class="line">        height: 100%;</span><br><span class="line">        opacity: 0;</span><br><span class="line">        cursor: pointer;</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line"></span><br><span class="line">    &lt;div class=<span class="string">"face"</span>&gt;</span><br><span class="line">      &lt;form action=<span class="string">""</span> method=<span class="string">"post"</span>&gt;</span><br><span class="line">        &lt;input <span class="built_in">type</span>=<span class="string">"file"</span>&gt;</span><br><span class="line">      &lt;/form&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">原型是一个对象，其他对象可以通过它实现属性继承。</span><br></pre></td></tr></table></figure>
+<p><img src="/2018/10/15/原型链/../images/原型链.png"></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/15/上传头像/" data-id="cjn7l2pa40010nsvdkqttb23h" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/10/15/原型链/" data-id="cjo6wlaxo001o58vdkd362m0k" class="article-share-link">Share</a>
       
       
     </footer>
@@ -138,10 +141,10 @@
 
 
   
-    <article id="post-重置表单样式" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Unicode码" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/15/重置表单样式/" class="article-date">
-  <time datetime="2018-09-15T08:11:48.244Z" itemprop="datePublished">2018-09-15</time>
+    <a href="/2018/09/17/Unicode码/" class="article-date">
+  <time datetime="2018-09-17T07:53:49.437Z" itemprop="datePublished">2018-09-17</time>
 </a>
     
   </div>
@@ -152,7 +155,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/15/重置表单样式/">重置表单样式</a>
+      <a class="article-title" href="/2018/09/17/Unicode码/">Unicode码</a>
     </h1>
   
 
@@ -161,12 +164,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">    &lt;style <span class="built_in">type</span>=<span class="string">"text/css"</span>&gt;</span><br><span class="line">      .inp &#123;</span><br><span class="line">        display: none;</span><br><span class="line">      &#125;</span><br><span class="line">      </span><br><span class="line">      .inp+label &#123;</span><br><span class="line">        position: relative;</span><br><span class="line">        display: inline-block;</span><br><span class="line">        padding: 20px;</span><br><span class="line">        background-color: orange;</span><br><span class="line">        border-radius: 3px;</span><br><span class="line">        border: 1px solid <span class="comment">#999999;</span></span><br><span class="line">        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);</span><br><span class="line">      &#125;</span><br><span class="line">      </span><br><span class="line">      .inp+label:active,</span><br><span class="line">      .inp+label:checked+label:active &#123;</span><br><span class="line">        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);</span><br><span class="line">        background-color: pink;</span><br><span class="line">      &#125;</span><br><span class="line">      </span><br><span class="line">      .inp:checked+label &#123;</span><br><span class="line">        border: 1px solid red;</span><br><span class="line">        background-color: purple;</span><br><span class="line">        box-shadow: 0 1px 2px rgba(0, 0, 0, 1);</span><br><span class="line">        background: url(images/icon.svg) center no-repeat;</span><br><span class="line">        background-size: 100% 100%;</span><br><span class="line">      &#125;</span><br><span class="line">      </span><br><span class="line">      .inp:checked+label:after &#123;</span><br><span class="line">        content: <span class="string">""</span>;</span><br><span class="line">        position: absolute;</span><br><span class="line">        font-size: 20px;</span><br><span class="line">        top: 0px;</span><br><span class="line">        left: 0px;</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div class=<span class="string">"box"</span>&gt;</span><br><span class="line">      &lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"fruit"</span> id=<span class="string">"inp_1"</span> class=<span class="string">"inp"</span>&gt;</span><br><span class="line">      &lt;label <span class="keyword">for</span>=<span class="string">"inp_1"</span> id=<span class="string">"lab"</span>&gt;&lt;/label&gt;</span><br><span class="line">      &lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> name=<span class="string">"fruit"</span> id=<span class="string">"inp_2"</span> class=<span class="string">"inp"</span>&gt;</span><br><span class="line">      &lt;label <span class="keyword">for</span>=<span class="string">"inp_2"</span> id=<span class="string">"lab"</span>&gt;&lt;/label&gt;苹果</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div class=<span class="string">"box"</span>&gt;</span><br><span class="line">      &lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> name=<span class="string">"sex"</span> id=<span class="string">"inp_3"</span> class=<span class="string">"inp"</span> /&gt;</span><br><span class="line">      &lt;label <span class="keyword">for</span>=<span class="string">"inp_3"</span> id=<span class="string">"lab"</span>&gt;&lt;/label&gt;男</span><br><span class="line">      &lt;input <span class="built_in">type</span>=<span class="string">"radio"</span> name=<span class="string">"sex"</span> id=<span class="string">"inp_4"</span> class=<span class="string">"inp"</span> /&gt;</span><br><span class="line">      &lt;label <span class="keyword">for</span>=<span class="string">"inp_4"</span> id=<span class="string">"lab"</span>&gt;&lt;/label&gt;女</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line"></span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="keyword">function</span> myFun(e) &#123;</span><br><span class="line">    var e = e || event</span><br><span class="line">    var x = e.keyCode</span><br><span class="line">    //  var x = e.which</span><br><span class="line">    <span class="keyword">if</span>(x) &#123;</span><br><span class="line">      alert(<span class="string">'按键的Unicode码为：'</span> + x)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  //document.onkeydown = myFun</span><br><span class="line">  document.onkeypress = myFun</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/15/重置表单样式/" data-id="cjn7l2ply002jnsvdwfjkoyzb" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/17/Unicode码/" data-id="cjo6wlanp000658vdk9mk43yt" class="article-share-link">Share</a>
       
       
     </footer>
@@ -176,10 +179,10 @@
 
 
   
-    <article id="post-切换按钮" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-行内调用事件" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/15/切换按钮/" class="article-date">
-  <time datetime="2018-09-15T08:11:46.493Z" itemprop="datePublished">2018-09-15</time>
+    <a href="/2018/09/17/行内调用事件/" class="article-date">
+  <time datetime="2018-09-17T07:53:47.816Z" itemprop="datePublished">2018-09-17</time>
 </a>
     
   </div>
@@ -190,7 +193,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/15/切换按钮/">切换按钮</a>
+      <a class="article-title" href="/2018/09/17/行内调用事件/">行内调用事件</a>
     </h1>
   
 
@@ -199,12 +202,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=<span class="string">"en"</span>&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;    </span><br><span class="line">    &lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span> src=<span class="string">"https://cdn.bootcss.com/jquery/1.8.3/jquery.js"</span>&gt;&lt;/script&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">        <span class="comment">#inp &#123;</span></span><br><span class="line">            display: none;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        span &#123;</span><br><span class="line">            color: <span class="comment">#333333;</span></span><br><span class="line">            line-height: 50px;</span><br><span class="line">            font-size: 25px;</span><br><span class="line">            margin-right: 20px;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">#inp + label &#123;</span></span><br><span class="line">            background: <span class="comment">#cccccc;</span></span><br><span class="line">            border-radius: 2em;</span><br><span class="line">            padding: 2px;</span><br><span class="line">            -webkit-transition: all .4s ease;</span><br><span class="line">            transition: all .4s ease;</span><br><span class="line">            outline: 0;</span><br><span class="line">            display: inline-block;</span><br><span class="line">            width: 100px;</span><br><span class="line">            height: 50px;</span><br><span class="line">            position: relative;</span><br><span class="line">            cursor: pointer;</span><br><span class="line">            -webkit-user-select: none;</span><br><span class="line">            -moz-user-select: none;</span><br><span class="line">            -ms-user-select: none;</span><br><span class="line">            user-select: none;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">#inp:checked + label &#123;</span></span><br><span class="line">            background-color: <span class="comment">#44bb8a;</span></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">#inp + label:after &#123;</span></span><br><span class="line">            border-radius: 50%;</span><br><span class="line">            background: <span class="comment">#ffffff;</span></span><br><span class="line">            -webkit-transition: all .2s ease;</span><br><span class="line">            transition: all .2s ease;</span><br><span class="line">            position: relative;</span><br><span class="line">            display: block;</span><br><span class="line">            content: <span class="string">""</span>;</span><br><span class="line">            width: 50%;</span><br><span class="line">            height: 100%;</span><br><span class="line">            bottom: 0;</span><br><span class="line">            left: 0;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">#inp:checked + label:after &#123;</span></span><br><span class="line">            left: 50%;</span><br><span class="line">        &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;span class=<span class="string">"word"</span>&gt;隐藏&lt;/span&gt;</span><br><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"checkbox"</span> id=<span class="string">"inp"</span>&gt;</span><br><span class="line">&lt;label <span class="keyword">for</span>=<span class="string">"inp"</span> id=<span class="string">"lab"</span>&gt;&lt;/label&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    $(<span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">        $(<span class="string">'#inp'</span>).change(<span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">            //方法1</span><br><span class="line">            $(<span class="string">'#inp'</span>).get(0).checked ? $(<span class="string">'.word'</span>).text(<span class="string">'公开'</span>) : $(<span class="string">'.word'</span>).text(<span class="string">'隐藏'</span>);</span><br><span class="line">            //方法2</span><br><span class="line">            $(<span class="string">'.word'</span>).text(<span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">                <span class="built_in">return</span> $(<span class="string">'#inp'</span>).get(0).checked ? <span class="string">'公开'</span> : <span class="string">'隐藏'</span></span><br><span class="line">            &#125;);</span><br><span class="line">            //方法3</span><br><span class="line">            $(<span class="string">'.word'</span>).text(<span class="function"><span class="title">function</span></span> () &#123;</span><br><span class="line">                <span class="built_in">return</span> $(<span class="string">'#inp'</span>).is(<span class="string">':checked'</span>) ? <span class="string">'公开'</span> : <span class="string">'隐藏'</span></span><br><span class="line">            &#125;)</span><br><span class="line">        &#125;);</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;input <span class="built_in">type</span>=<span class="string">"button"</span> onclick=<span class="string">"alert('good')"</span> value=<span class="string">"点击"</span>&gt;</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/15/切换按钮/" data-id="cjn7l2pbc0016nsvdfokwp4f3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/17/行内调用事件/" data-id="cjo6wlb21002j58vdvixg7n4j" class="article-share-link">Share</a>
       
       
     </footer>
@@ -214,10 +217,10 @@
 
 
   
-    <article id="post-模糊图片" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-Math" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/15/模糊图片/" class="article-date">
-  <time datetime="2018-09-15T08:11:44.911Z" itemprop="datePublished">2018-09-15</time>
+    <a href="/2018/09/17/Math/" class="article-date">
+  <time datetime="2018-09-17T07:53:46.238Z" itemprop="datePublished">2018-09-17</time>
 </a>
     
   </div>
@@ -228,7 +231,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/15/模糊图片/">模糊图片</a>
+      <a class="article-title" href="/2018/09/17/Math/">Math</a>
     </h1>
   
 
@@ -237,12 +240,14 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line"> &lt;head&gt;</span><br><span class="line">  &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">  &lt;script src=<span class="string">"https://cdn.bootcss.com/jquery/1.8.3/jquery.js"</span> <span class="built_in">type</span>=<span class="string">"text/javascript"</span> charset=<span class="string">"utf-8"</span>&gt;&lt;/script&gt;</span><br><span class="line">  &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;style&gt;</span><br><span class="line">   .box &#123;</span><br><span class="line">    border: 1px solid red;</span><br><span class="line">    width: 500px;</span><br><span class="line">    height: 300px;</span><br><span class="line">    overflow: hidden;</span><br><span class="line">   &#125;</span><br><span class="line">   </span><br><span class="line">   .box img &#123;</span><br><span class="line">    width: 100%;</span><br><span class="line">    height: 100%;</span><br><span class="line">    -webkit-filter: blur(80px);</span><br><span class="line">    filter: blur(80px);</span><br><span class="line">   &#125;</span><br><span class="line">  &lt;/style&gt;</span><br><span class="line"> &lt;/head&gt;</span><br><span class="line"></span><br><span class="line"> &lt;body&gt;</span><br><span class="line">  &lt;div class=<span class="string">"box"</span>&gt;</span><br><span class="line">   &lt;img src=<span class="string">"http://img1.qunarzz.com/piao/fusion/1801/1a/94428c6dea109402.jpg_640x200_2cf590d8.jpg"</span> alt=<span class="string">""</span>&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line"> &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="0-m-lt-result-lt-34-n"><a href="#0-m-lt-result-lt-34-n" class="headerlink" title="0(m)&lt;result&lt;34(n)"></a>0(m)&lt;result&lt;34(n)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> random(m, n) &#123;</span><br><span class="line">      console.log(Math.random() * (n + 1 - m))</span><br><span class="line">    &#125;</span><br><span class="line">    random(0, 34)</span><br></pre></td></tr></table></figure>
+<h2 id="0-m-lt-result-lt-35-n-1"><a href="#0-m-lt-result-lt-35-n-1" class="headerlink" title="0(m)=&lt;result=&lt;35(n-1)"></a>0(m)=&lt;result=&lt;35(n-1)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> floor(m, n) &#123;</span><br><span class="line">      console.log(Math.floor(Math.random() * (n + 1 - m)))</span><br><span class="line">    &#125;</span><br><span class="line">    floor(0, 36)</span><br></pre></td></tr></table></figure>
+<h2 id="1-m-1-lt-result-lt-35-n-1"><a href="#1-m-1-lt-result-lt-35-n-1" class="headerlink" title="1(m+1)=&lt;result=&lt;35(n+1)"></a>1(m+1)=&lt;result=&lt;35(n+1)</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> ceil(m, n) &#123;</span><br><span class="line">      console.log(Math.ceil(Math.random() * (n + 1 - m)))</span><br><span class="line">    &#125;</span><br><span class="line">    ceil(0, 35)</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/15/模糊图片/" data-id="cjn7l2pik0023nsvdkhgmgldg" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/17/Math/" data-id="cjo6wlanp000758vd7od5fwt7" class="article-share-link">Share</a>
       
       
     </footer>
@@ -252,10 +257,10 @@
 
 
   
-    <article id="post-现在时间" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-循环" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/15/现在时间/" class="article-date">
-  <time datetime="2018-09-15T08:11:43.130Z" itemprop="datePublished">2018-09-15</time>
+    <a href="/2018/09/17/循环/" class="article-date">
+  <time datetime="2018-09-17T07:53:44.556Z" itemprop="datePublished">2018-09-17</time>
 </a>
     
   </div>
@@ -266,7 +271,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/15/现在时间/">现在时间</a>
+      <a class="article-title" href="/2018/09/17/循环/">循环</a>
     </h1>
   
 
@@ -275,12 +280,17 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div class=<span class="string">"wrap"</span>&gt;</span><br><span class="line">      &lt;div id=<span class="string">"box"</span>&gt;&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line">  &lt;script&gt;</span><br><span class="line">    var box = document.getElementById(<span class="string">'box'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">function</span> <span class="function"><span class="title">time</span></span>() &#123;</span><br><span class="line">      var now = new Date()</span><br><span class="line">      var hours = now.getHours()</span><br><span class="line">      var minutes = now.getMinutes()</span><br><span class="line">      var seconds = now.getSeconds()</span><br><span class="line">      var str = <span class="string">'现在时间：'</span></span><br><span class="line">      <span class="keyword">if</span>(hours &lt; 12) &#123;</span><br><span class="line">        str += <span class="string">'上午'</span></span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        str += <span class="string">'下午'</span></span><br><span class="line">      &#125;</span><br><span class="line">      str += hours + <span class="string">'时'</span> + minutes + <span class="string">'分'</span> + seconds + <span class="string">'秒'</span></span><br><span class="line">      box.innerHTML = str</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">    time()</span><br><span class="line">    var setTime = setInterval(time, 1000)</span><br><span class="line"></span><br><span class="line">    <span class="keyword">function</span> <span class="function"><span class="title">stop</span></span>() &#123;</span><br><span class="line">      clearInterval(setTime)</span><br><span class="line">    &#125;</span><br><span class="line">  &lt;/script&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="做循环的时候-首先要把思路理清楚-回答四个问题"><a href="#做循环的时候-首先要把思路理清楚-回答四个问题" class="headerlink" title="做循环的时候,首先要把思路理清楚,回答四个问题:"></a>做循环的时候,首先要把思路理清楚,回答四个问题:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">初始化条件?</span><br><span class="line">控制循环的条件?</span><br><span class="line">反复做的事?</span><br><span class="line">怎样进入下一循环?</span><br></pre></td></tr></table></figure>
+<h2 id="对1到100求和"><a href="#对1到100求和" class="headerlink" title="对1到100求和:"></a>对1到100求和:</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">初始化条件:sum=0;num=1</span><br><span class="line">控制循环的条件:num&lt;=100</span><br><span class="line">反复做的事:sum = sum  + num（或sum += num）</span><br><span class="line">怎样进入下一循环:num++</span><br></pre></td></tr></table></figure>
+<h2 id="while"><a href="#while" class="headerlink" title="while"></a>while</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  var sum = 0;</span><br><span class="line">  var num = 1;</span><br><span class="line">  <span class="keyword">while</span>(num &lt;= 100) &#123;</span><br><span class="line">    sum += num;</span><br><span class="line">    num++;</span><br><span class="line">  &#125;</span><br><span class="line">  document.write(sum + <span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="do…while"><a href="#do…while" class="headerlink" title="do…while"></a>do…while</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  var sum = 0;</span><br><span class="line">  var num = 1;</span><br><span class="line">  <span class="keyword">do</span> &#123;</span><br><span class="line">    sum += num;</span><br><span class="line">    num++;</span><br><span class="line">  &#125; <span class="keyword">while</span> (num &lt;= 100)</span><br><span class="line">  document.write(sum + <span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="for"><a href="#for" class="headerlink" title="for"></a>for</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script <span class="built_in">type</span>=<span class="string">"text/javascript"</span>&gt;</span><br><span class="line">  var sum = 0;</span><br><span class="line">  <span class="keyword">for</span>(var num = 1; num &lt;= 100; num++) &#123;</span><br><span class="line">    sum += num;</span><br><span class="line">  &#125;</span><br><span class="line">  document.write(sum + <span class="string">'&lt;br&gt;'</span>)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="三种循环是可以替换的，但是三种循环也有一定的差异："><a href="#三种循环是可以替换的，但是三种循环也有一定的差异：" class="headerlink" title="三种循环是可以替换的，但是三种循环也有一定的差异："></a>三种循环是可以替换的，但是三种循环也有一定的差异：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> 当<span class="keyword">while</span>循环开始后，先判断条件是否满足，如果满足就执行循环体内的语句，执行完毕后再回来判断条件是否满足，如此无限重复。直到条件不满足时，执行<span class="keyword">while</span>循环后边的语句。</span><br><span class="line"><span class="keyword">for</span>循环适用于知道范围的情况（或知道循环次数的情况），当循环次数（或范围）不确定时用<span class="keyword">while</span>循环或do...while循环。 </span><br><span class="line"><span class="keyword">while</span>循环和<span class="keyword">do</span>...循环，当第一次进入循环就不满足条件时，<span class="keyword">while</span>循环不做，do...while执行一次。其他情况输出结果是一样的。</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/15/现在时间/" data-id="cjn7l2pjf0027nsvdgjchmtnc" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/17/循环/" data-id="cjo6wlazf002358vdtf1wslgx" class="article-share-link">Share</a>
       
       
     </footer>
@@ -290,10 +300,10 @@
 
 
   
-    <article id="post-return" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-MUI的应用场景" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/15/return/" class="article-date">
-  <time datetime="2018-09-15T08:11:41.372Z" itemprop="datePublished">2018-09-15</time>
+    <a href="/2018/09/17/MUI的应用场景/" class="article-date">
+  <time datetime="2018-09-17T07:53:42.866Z" itemprop="datePublished">2018-09-17</time>
 </a>
     
   </div>
@@ -304,7 +314,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/15/return/">return</a>
+      <a class="article-title" href="/2018/09/17/MUI的应用场景/">MUI的应用场景</a>
     </h1>
   
 
@@ -313,14 +323,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">myFun</span></span>() &#123;</span><br><span class="line">    <span class="built_in">return</span> <span class="string">'hello'</span></span><br><span class="line">  &#125;</span><br><span class="line">myFun()//无反应</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">myFun</span></span>() &#123;</span><br><span class="line">    <span class="built_in">return</span> <span class="string">'hello'</span></span><br><span class="line">  &#125;</span><br><span class="line">alert(myFun())//hello</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">myFun</span></span>() &#123;</span><br><span class="line">    <span class="built_in">return</span> alert(<span class="string">'hello'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">myFun()//hello</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">追求低成本</span><br><span class="line">追求速度</span><br><span class="line">非重度体验项目</span><br><span class="line">创业类项目</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/15/return/" data-id="cjn7l2p8d000tnsvdstlv9so2" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/17/MUI的应用场景/" data-id="cjo6wlan9000558vdumzoe6ya" class="article-share-link">Share</a>
       
       
     </footer>
@@ -330,10 +338,10 @@
 
 
   
-    <article id="post-preventDefault" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-padding" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/15/preventDefault/" class="article-date">
-  <time datetime="2018-09-15T08:11:39.528Z" itemprop="datePublished">2018-09-15</time>
+    <a href="/2018/09/17/padding/" class="article-date">
+  <time datetime="2018-09-17T07:53:41.302Z" itemprop="datePublished">2018-09-17</time>
 </a>
     
   </div>
@@ -344,7 +352,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/15/preventDefault/">preventDefault</a>
+      <a class="article-title" href="/2018/09/17/padding/">padding</a>
     </h1>
   
 
@@ -353,12 +361,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>() &#123;</span><br><span class="line">    event.preventDefault()</span><br><span class="line">    alert(123)</span><br><span class="line">  &#125;</span><br><span class="line">  document.oncontextmenu = fun</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">width: 100%;</span><br><span class="line">padding: 0 20px;</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/15/preventDefault/" data-id="cjn7l2p68000mnsvdt4cq6oft" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/17/padding/" data-id="cjo6wlaqb000o58vdcwleniym" class="article-share-link">Share</a>
       
       
     </footer>
@@ -368,10 +376,10 @@
 
 
   
-    <article id="post-定时器" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-reset" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/15/定时器/" class="article-date">
-  <time datetime="2018-09-15T08:11:37.318Z" itemprop="datePublished">2018-09-15</time>
+    <a href="/2018/09/17/reset/" class="article-date">
+  <time datetime="2018-09-17T07:53:39.445Z" itemprop="datePublished">2018-09-17</time>
 </a>
     
   </div>
@@ -382,7 +390,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/15/定时器/">定时器</a>
+      <a class="article-title" href="/2018/09/17/reset/">reset</a>
     </h1>
   
 
@@ -391,16 +399,12 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(fun, 2000)</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(fun(), 2000)</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(<span class="string">'fun()'</span>, 2000)</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">setTimeout(<span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>() &#123;</span><br><span class="line">    alert(<span class="string">'hello'</span>)</span><br><span class="line">  &#125;, 2000)</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>() &#123;</span><br><span class="line">    alert(<span class="string">'hello'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">var mm = setTimeout(fun, 2000)</span><br></pre></td></tr></table></figure>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">fun</span></span>() &#123;</span><br><span class="line">    alert(<span class="string">'hello'</span>)</span><br><span class="line">  &#125;</span><br><span class="line">var mm = setTimeout(fun, 2000)</span><br><span class="line">clearInterval(mm)</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">@charset <span class="string">"utf-8"</span>;</span><br><span class="line">body,</span><br><span class="line">div,</span><br><span class="line">p,</span><br><span class="line">h1,</span><br><span class="line">h2,</span><br><span class="line">h3,</span><br><span class="line">h4,</span><br><span class="line">h5,</span><br><span class="line">h6,</span><br><span class="line">ul,</span><br><span class="line">li,</span><br><span class="line">ol,</span><br><span class="line">img,</span><br><span class="line">p,</span><br><span class="line">span,</span><br><span class="line">input,</span><br><span class="line">form &#123;</span><br><span class="line">	margin: 0;</span><br><span class="line">	padding: 0;</span><br><span class="line">	background: none;</span><br><span class="line">	border: none;</span><br><span class="line">	outline: none;</span><br><span class="line">	box-sizing: border-box;</span><br><span class="line">	vertical-align: top;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">body &#123;</span><br><span class="line">	font-family: <span class="string">"Microsoft Yahei"</span>, Arial, Helvetica, sans-serif;</span><br><span class="line">	font-size: 16px;	</span><br><span class="line">	color: <span class="comment">#282828;</span></span><br><span class="line">&#125;</span><br><span class="line">a &#123;</span><br><span class="line">	color: <span class="comment">#282828;</span></span><br><span class="line">	text-decoration: none;</span><br><span class="line">&#125;</span><br><span class="line">a:hover &#123;</span><br><span class="line">	color: <span class="comment">#282828;</span></span><br><span class="line">	text-decoration: none;</span><br><span class="line">&#125;</span><br><span class="line">ul &#123;</span><br><span class="line">	list-style: none;</span><br><span class="line">&#125;</span><br><span class="line">.clear:after &#123;</span><br><span class="line">	content: <span class="string">""</span>;</span><br><span class="line">	height: 0;</span><br><span class="line">	display: block;</span><br><span class="line">	visibility: hidden;</span><br><span class="line">	clear: both;</span><br><span class="line">&#125;</span><br><span class="line">.clear &#123;</span><br><span class="line">    zoom:1;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/15/定时器/" data-id="cjn7l2pfs001qnsvd228d89i0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/17/reset/" data-id="cjo6wlaqq000q58vdywci03pm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -410,10 +414,10 @@
 
 
   
-    <article id="post-移动端1px" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-小程序" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2018/09/15/移动端1px/" class="article-date">
-  <time datetime="2018-09-15T08:11:34.274Z" itemprop="datePublished">2018-09-15</time>
+    <a href="/2018/09/17/小程序/" class="article-date">
+  <time datetime="2018-09-17T07:53:37.843Z" itemprop="datePublished">2018-09-17</time>
 </a>
     
   </div>
@@ -424,7 +428,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/09/15/移动端1px/">移动端1px</a>
+      <a class="article-title" href="/2018/09/17/小程序/">小程序</a>
     </h1>
   
 
@@ -433,12 +437,17 @@
     <div class="article-entry" itemprop="articleBody">
       
         <hr>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line"></span><br><span class="line">  &lt;head&gt;</span><br><span class="line">    &lt;meta charset=<span class="string">"UTF-8"</span>&gt;</span><br><span class="line">    &lt;title&gt;&lt;/title&gt;</span><br><span class="line">    &lt;style&gt;</span><br><span class="line">      .box &#123;</span><br><span class="line">        width: 500px;</span><br><span class="line">        height: 200px;</span><br><span class="line">        background-color: green;</span><br><span class="line">        position: relative;</span><br><span class="line">      &#125;</span><br><span class="line">      </span><br><span class="line">      .box:after &#123;</span><br><span class="line">        content: <span class="string">""</span>;</span><br><span class="line">        position: absolute;</span><br><span class="line">        height: 2px;</span><br><span class="line">        background-color: red;</span><br><span class="line">        right: 0;</span><br><span class="line">        left: 0;</span><br><span class="line">        bottom: 0;</span><br><span class="line">        -webkit-transform: scaleY(.5);</span><br><span class="line">        transform: scaleY(.5);</span><br><span class="line">      &#125;</span><br><span class="line">    &lt;/style&gt;</span><br><span class="line">  &lt;/head&gt;</span><br><span class="line"></span><br><span class="line">  &lt;body&gt;</span><br><span class="line">    &lt;div class=<span class="string">"box"</span>&gt;&lt;/div&gt;</span><br><span class="line">  &lt;/body&gt;</span><br><span class="line"></span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h2 id="什么是微信小程序"><a href="#什么是微信小程序" class="headerlink" title="什么是微信小程序"></a>什么是微信小程序</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">不需要下载安装即可使用</span><br><span class="line">用户“用完即走”，不用关心是否安装太多应用</span><br><span class="line">应用将无处不在，随时可用</span><br></pre></td></tr></table></figure>
+<h2 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">小程序适合做简单的、用完即走的应用</span><br><span class="line">小程序适合低频的应用</span><br><span class="line">小程序适合性能要求不高的应用</span><br></pre></td></tr></table></figure>
+<h2 id="传统APP与微信小程序比较"><a href="#传统APP与微信小程序比较" class="headerlink" title="传统APP与微信小程序比较"></a>传统APP与微信小程序比较</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">体验差，成本高</span><br><span class="line">流程简单，跨平台</span><br></pre></td></tr></table></figure>
+<h2 id="对开发者的影响"><a href="#对开发者的影响" class="headerlink" title="对开发者的影响"></a>对开发者的影响</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">短期内将提升市场对JavaScript程序员的需求量</span><br><span class="line">小程序是零基础开发者很好的入门平台</span><br><span class="line">小程序不可以使用现在已经存在的JavaScript组件库</span><br><span class="line">开发环境和开发逻辑极其简单，非常适合新手入门</span><br></pre></td></tr></table></figure>
+<h2 id="分辨率"><a href="#分辨率" class="headerlink" title="分辨率"></a>分辨率</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">iPhone 6下1px=1rpx</span><br><span class="line">iPhone 6 Plus下1px=0.6rpx</span><br></pre></td></tr></table></figure>
+<h2 id="不同页面传值方式"><a href="#不同页面传值方式" class="headerlink" title="不同页面传值方式"></a>不同页面传值方式</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">自定义属性： data-index=<span class="string">"&#123;&#123;index&#125;&#125;"</span> e.currentTarget.dataset.index options.id</span><br><span class="line">组件：this.properties.book.id options.id</span><br><span class="line">公共变量</span><br><span class="line">本地存储</span><br></pre></td></tr></table></figure>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/09/15/移动端1px/" data-id="cjn7l2pjn0028nsvd8ae2b0ys" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2018/09/17/小程序/" data-id="cjo6wlayz002058vd0at66ld4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -452,7 +461,7 @@
 
   <nav id="page-nav">
     
-    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
+    <a class="extend prev" rel="prev" href="/">&laquo; Prev</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/3/">Next &raquo;</a>
   </nav>
 
 </section>
@@ -471,7 +480,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li></ul>
     </div>
   </div>
 
@@ -484,23 +493,23 @@
       <ul>
         
           <li>
-            <a href="/2018/09/17/Unicode码/">Unicode码</a>
+            <a href="/2018/10/17/JavaScript 数据类型/">JavaScript 数据类型</a>
           </li>
         
           <li>
-            <a href="/2018/09/17/行内调用事件/">行内调用事件</a>
+            <a href="/2018/10/17/jQuery对象与DOM对象之间的转换方法/">jQuery对象与DOM对象之间的转换方法</a>
           </li>
         
           <li>
-            <a href="/2018/09/17/Math/">Math</a>
+            <a href="/2018/10/15/复制(9)demo/">demo</a>
           </li>
         
           <li>
-            <a href="/2018/09/17/循环/">循环</a>
+            <a href="/2018/10/15/防止页面抖动/">防止页面抖动</a>
           </li>
         
           <li>
-            <a href="/2018/09/17/MUI的应用场景/">MUI的应用场景</a>
+            <a href="/2018/10/15/闭包/">闭包</a>
           </li>
         
       </ul>
